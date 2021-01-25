@@ -1,4 +1,32 @@
 body {
   color: black; }
 
+.upper-nav {
+  background-color: red; }
+  .upper-nav * {
+    color: white; }
+  .upper-nav img {
+    width: 27%; }
+
+footer {
+  position: relative;
+  bottom: 0; }
+
+.logo {
+  width: 100%; }
+
+.subscribebutton {
+  border-radius: 30%;
+  background-color: #FFE400;
+  color: black; }
+
+.footer-links a {
+  width: 40%; }
+
+i {
+  color: grey; }
+
+.nav-link {
+  border-right: 1px rgba(153, 150, 150, 0.301) solid; }
+
 /*# sourceMappingURL=style.css.map */
