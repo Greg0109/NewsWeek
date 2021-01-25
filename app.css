@@ -7880,4 +7880,11 @@ i {
   font-family: roboto, sans-serif;
   fill: white; }
 
+#newsTitle2 {
+  font-family: roboto, sans-serif;
+  fill: white;
+  height: 100px;
+  width: 150px;
+  padding: 0; }
+
 /*# sourceMappingURL=app.css.map */
