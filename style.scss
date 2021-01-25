@@ -1,8 +1,13 @@
 $font-main: roboto, sans-serif;
 $font-secondary: arial, helvetica, sans-serif;
+$icons: 27px;
 
 body {
     color: black;
+}
+
+.icons {
+    font-size: $icons;
 }
 
 .upper-nav {
@@ -20,13 +25,41 @@ footer {
     bottom: 0;
 }
 
+#footerTitle {
+    fill: red;
+    height: 100%;
+    width: 100%;
+}
+
 .logo {
     width: 100%;
 }
 
 .subscribebutton {
-    border-radius: 30%;
-    background-color: #FFE400;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+}
+
+.middleNavLinks,
+.footerNavLinks {
+    color: #000;
+    font-weight: bolder;
+}
+
+.footerNavLinks {
+    font-weight: normal;
+}
+.middleNavLinks:hover,
+.footerNavLinks :hover {
+    color: red;
+}
+
+.lowerLinks {
+    color: #666;
+}
+
+#lowerLinks1 {
     color: black;
 }
 
@@ -42,4 +75,9 @@ i {
 
 .nav-link {
     border-right: 1px  rgba(153, 150, 150, 0.301) solid;
+}
+
+#newsTitle {
+    font-family: $font-main;
+    fill: white;
 }
