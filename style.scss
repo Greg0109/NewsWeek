@@ -2,6 +2,11 @@ $font-main: roboto, sans-serif;
 $font-secondary: arial, helvetica, sans-serif;
 $icons: 27px;
 
+$theme-colors: (
+    "primary": red,
+    "secondary": #ccc
+);
+
 body {
     color: black;
 }

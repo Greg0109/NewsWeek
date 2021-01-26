@@ -1,6 +1,0 @@
-// override default colours
-$theme-colors: (
-);
-
-// import bootstrap
-@import "../bootstrap/scss/bootstrap";
