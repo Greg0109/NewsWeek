@@ -1,9 +1,9 @@
-# Project 2 - The Next Web Copy
+# Project 3 - NewsWeek Copy
 
 > This is the Project 2 in the Microverse course
 
 ### View in browser
-[Link](https://greg0109.github.io/TheNextWeb/)
+Not available yet
 
 ### Screenshot
 Insert screenshot here
@@ -19,6 +19,10 @@ Insert screenshot here
 
 - GitHub: [@Greg0109](https://github.com/greg0109)
 - Twitter: [@Greg_0109](https://twitter.com/greg_0109)
+
+👤 **Marcus**
+
+- GitHub: [@CatchMeIfYouCan](https://github.com/CacheMeGifYouCan)
 
 ## Contributing
 
