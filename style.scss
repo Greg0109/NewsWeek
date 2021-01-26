@@ -8,14 +8,14 @@ $theme-colors: (
 );
 
 body {
-    color: black;
+    color: grey;
 }
 
 .icons {
     font-size: $icons;
 }
 
-.upper-nav {
+.navbar {
     background-color: red;
     * {
         color: white;

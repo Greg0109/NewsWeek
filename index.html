@@ -1,340 +1,798 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <title>NewsWeek</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,400&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body class="bg-grey">
     <!-- NavBar 1-->
-    <section class="container-fluid d-none d-md-block mt-5">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Left
-                        </a>
-                    </li>
-                </ul>
+    <header class="container d-none d-md-block mt-5">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Wed 20, Jan 2021 </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto order-0 d-inline-flex">
+          <a class="navbar-brand mx-auto" href="#">
+            <div class="navbar-nav mr-5">
+              <img
+                class="d-none d-md-flex text-white"
+                width="300"
+                id="newsTitle"
+                src="./assets/mainlogo.svg"
+                alt="logo"
+                class="img-fluid"
+                height=""
+              />
             </div>
-            <div class="mx-auto order-0 d-inline-flex">
-                <a class="navbar-brand mx-auto" href="#">
-                    <div class="navbar-nav mr-5">
-                        <img class="d-none d-md-flex" id="newsTitle" src="./assets/" alt="logo" class="img-fluid" height="">
-                    </div>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item h-25">
-                        <a class="nav-link h-auto text-white mr-5" href="#">LOGIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <span class="navbar-nav btn btn-warning d-inline-flex font-weight-bolder text-center subscribebutton2 h-auto px-3">SUBSCRIBE</span>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item h-25">
+              <a class="nav-link h-auto text-white mr-5" href="#">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <span
+                class="navbar-nav btn btn-warning d-inline-flex font-weight-bolder text-center subscribebutton2 h-auto px-3"
+                >SUBSCRIBE</span
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Navbar Mobile -->
-    <section class="d-md-none">
-        <nav class="navbar navbar-dark bg-primary d-flex flex-wrap w-100">
-            <div class="navbar-nav mr-5">
-                <img class="d-md-none" src="./assets/logo-small.png" alt="logo" height="30" width="70" class="img-fluid">
-            </div>
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Left
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <span>
-                <i class="fas fa-user icons text-white mr-2"></i>
-            </span>
-            <span class="navbar-nav btn btn-warning d-inline-flex text-center subscribebutton2 h-auto px-2">SUBSCRIBE</span>
-            <div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link h-auto" href="#">Right</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+    <header class="d-md-none">
+      <nav class="navbar navbar-dark d-flex flex-wrap w-100">
+        <div class="navbar-nav mr-5">
+          <img
+            class="d-md-none"
+            src="./assets/logo-small.png"
+            alt="logo"
+            height="30"
+            width="70"
+            class="img-fluid"
+          />
+        </div>
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Left </a>
+            </li>
+          </ul>
+        </div>
+        <span>
+          <i class="fas fa-user icons text-white mr-2"></i>
+        </span>
+        <span
+          class="navbar-nav btn btn-warning d-inline-flex text-center subscribebutton2 h-auto px-2"
+          >SUBSCRIBE</span
+        >
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".dual-collapse2"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link h-auto" href="#">Right</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Navbar Lower -->
-    <section id="navBar_Container">
-        <div class="container-fluid middle-nav d-none d-md-block">
-            <ul class="nav nav-stacked justify-content-start">
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">U.S.</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">World</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Business</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Tech & Science</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Culture</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Newsgeek</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Sports</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Health</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">The Debate</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Experts</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link p-2 middleNavLinks">Vantage</a>
-                </li>
-                <li class="nav-item p-2">
-                    <input class="nav-link p-2 middleNavLinks d-inline w-25 border-0" placeholder="Search"><i class="fa fa-search ml-4" aria-hidden="true"></i>
-                </li>
-            </ul>
-        </div>
-        <div class="container-fluid lower-nav mb-3 d-none d-md-block">
-            <hr class="mx-5 my-0">
-            <ul class="nav nav-tabs nav-stacked justify-content-start mx-2 font-weight-bolder">
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks font-weight-bolder" id="lowerLinks1">TRENDING</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks">JOE BIDEN</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks">DONALD TRUMP</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks">CORONAVIRUS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks">STIMULUS PACKAGE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks">VACCINE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link lowerLinks">CAPITOL RIOTS</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deserunt atque doloribus eos totam, doloremque optio repellendus impedit perspiciatis. Officia culpa numquam nemo fugiat placeat incidunt error quia ducimus necessitatibus?
-    Voluptas, illo corrupti eligendi totam autem explicabo perspiciatis vel repudiandae. Animi, repudiandae provident ratione facere, in odio eos nihil quod numquam quibusdam voluptatem sequi praesentium aliquid suscipit cum sit quam?
-    Natus earum, libero est laboriosam recusandae suscipit officia asperiores magnam necessitatibus ducimus itaque velit quia. Rem, molestiae sapiente dolores voluptatibus officia maiores aliquid odit, culpa minus temporibus esse ab suscipit.
-    Aliquam sunt voluptates suscipit ut quisquam illo recusandae maiores minima quas dicta architecto maxime rem rerum illum ratione exercitationem voluptatibus natus, sequi reprehenderit possimus consequatur incidunt amet? Itaque, fuga facilis!
-    Autem alias incidunt explicabo? Eum facere perferendis delectus molestiae deleniti totam, illo dicta id accusantium vitae esse dolores accusamus quia sunt quaerat in quidem inventore rerum suscipit aliquid expedita vel.
-    Alias laboriosam exercitationem ullam sequi ex consequatur consequuntur quo fugit itaque, fugiat illo eum odit. Vel, quasi esse eaque harum quis odit nam! Architecto sequi voluptatem quibusdam enim dolore. Enim.
-    Pariatur similique ipsum ea, excepturi id maxime labore soluta, illum modi consequuntur nesciunt voluptatibus eos porro eligendi necessitatibus eveniet. Assumenda recusandae vero nihil ab veniam deleniti doloribus possimus dicta repellendus!
-    Iste eaque, facilis esse molestias reprehenderit fugit expedita, quas illo mollitia voluptas molestiae animi libero, vero minus voluptatibus sed itaque et possimus doloremque ipsa consequatur. Animi illo tempora placeat omnis!
-    Reiciendis dicta at aperiam molestiae aspernatur consequuntur animi possimus neque sunt velit! Laudantium asperiores sunt quo vel cupiditate eos corporis excepturi ratione vitae delectus. Soluta consequuntur incidunt quas? Odio, est?
-    Expedita eaque nesciunt voluptates laborum earum suscipit laboriosam quae at ab ullam. Quasi debitis ratione inventore voluptatibus dolores beatae ab ipsam eos porro! Inventore iusto quibusdam, at sed magnam quidem?
-    Ipsam reprehenderit corrupti atque fugiat accusantium accusamus hic dolore odio, facere deleniti expedita consequuntur suscipit fugit esse, adipisci sunt eligendi maxime sit ea officia. Cumque, at velit! Error, quis ea.
-    Itaque omnis voluptas ducimus enim dicta veritatis quidem, eum impedit rerum vel molestiae animi? Autem corporis tempora consequatur ipsam dolorem veritatis vero nostrum doloremque asperiores placeat at aspernatur, debitis deserunt!
-    Consequuntur omnis mollitia quam rerum sunt voluptate blanditiis dolores ipsam, iste ex odit ab? Accusantium perspiciatis quisquam itaque autem vel fugiat nulla unde, repudiandae aspernatur, sed quo laudantium optio sapiente?
-    A similique voluptates aliquid pariatur est voluptatem et laboriosam itaque, iusto tenetur, quod nemo eligendi consectetur ipsam qui porro eveniet officiis quae nam quos! Debitis tempore blanditiis dolores molestias distinctio!
-    Aut aliquid praesentium perferendis labore reiciendis aliquam, voluptatibus possimus laborum voluptas quod consequatur! Enim, minima, ad molestiae debitis esse dicta ipsa ratione expedita voluptatibus doloremque ut corrupti praesentium provident. Molestiae.
-    Deleniti distinctio iure veniam fuga voluptatum iusto dolore eveniet labore! Blanditiis est quisquam quo tenetur. Hic accusantium corrupti ab, officia est sit modi sint, sapiente unde, quibusdam officiis impedit quod.
-    Aliquid nihil quaerat dolores reprehenderit numquam reiciendis labore veniam, est ipsa at. Dolor, aperiam maxime at aspernatur repudiandae eum, tempora enim dolorum totam, vero dicta sed tenetur minus! Adipisci, eaque?
-    Voluptate, quam. Hic animi amet, adipisci facilis perspiciatis repudiandae laborum. Doloremque iusto animi deleniti numquam veniam eius molestiae a vel quo consequatur accusantium quisquam vero veritatis repudiandae impedit, placeat saepe?
-    Perspiciatis quis atque ducimus. Culpa tempore est repudiandae quo fuga! In earum aut sed modi iure, dicta libero, sint quidem sunt amet cupiditate itaque inventore ullam! Animi omnis impedit sed!
-    Impedit molestias culpa praesentium velit optio consequuntur, eaque placeat nulla nihil quas temporibus, quisquam possimus saepe animi deserunt cum harum officia, illum magnam iste. Libero eligendi voluptates animi possimus facere.
-    Assumenda totam inventore aliquam soluta ex ad doloremque, sed mollitia dolores odit, excepturi id vitae. Est quaerat excepturi quos. Iste, sed porro. Excepturi beatae quo delectus hic voluptatum eum quam.
-    Quos aut quia cum praesentium itaque mollitia ex officia magni ipsam ab optio ipsum voluptatibus quam vero commodi eaque neque cumque, tempore dolor nulla quaerat dicta incidunt nesciunt molestiae! Commodi?
-    Accusamus tempora ullam eligendi tenetur saepe libero totam id provident harum voluptates unde quia quidem repudiandae mollitia aperiam dicta consequuntur architecto, odit illo eos. Impedit commodi qui repellat dolores asperiores.
-    Commodi minus mollitia perferendis. Amet quaerat odit corrupti at libero, voluptatibus velit culpa! Sit consectetur sed distinctio aliquid laborum tempora eveniet voluptatibus totam, rem sint, sapiente illum qui rerum maxime.
-    Nemo dolor, quia minima numquam similique ipsa reiciendis magnam autem iure doloribus consectetur hic laboriosam repellat harum temporibus molestias, neque beatae quam ipsam? Eligendi sit quod voluptates, nostrum qui reiciendis?
-    Voluptatibus sapiente cum magni vero neque quis nulla nam perspiciatis quaerat aliquam, incidunt assumenda consequatur delectus iure aliquid voluptates eum eaque suscipit adipisci soluta facere nesciunt iusto sequi? Dolorem, ex.
-    Sed ratione unde aperiam omnis ullam at alias hic reprehenderit debitis architecto, sequi suscipit cumque sit. Vero placeat maiores animi saepe delectus laboriosam dolor exercitationem, minima ab ipsum et recusandae!
-    Id ipsam fugit sed laborum illo magnam, saepe quidem? Laboriosam, porro culpa deleniti ratione assumenda iure beatae esse expedita, vitae fugiat ipsam mollitia magni? Distinctio quis sapiente dolores suscipit quaerat.
-    Rem fuga ullam ab minus obcaecati quam perspiciatis repellat, numquam delectus, natus dolor eveniet suscipit culpa explicabo itaque reprehenderit totam eligendi magnam ipsa facere odio illo iure. Dolor, dignissimos sint.
-    Rerum esse molestiae minus quo cumque ad quidem distinctio, reiciendis, voluptas quae tempore! Et necessitatibus unde aliquam tenetur eligendi eos veniam, sapiente eaque corporis quidem nostrum, velit sint, labore placeat.
-    Ab tenetur laborum explicabo! Atque laborum debitis eum repellat ipsa quidem saepe non deleniti tenetur inventore, sunt asperiores, voluptate vel. A animi consequuntur magni deleniti blanditiis quas enim nesciunt similique.
-    Fuga quibusdam doloribus temporibus commodi placeat fugit quia culpa sit praesentium odit, provident dolor aliquam perspiciatis? Quo eligendi nobis aperiam voluptates, eum veritatis, numquam illum explicabo accusamus voluptatibus, fugiat repellendus.
-    Incidunt dolores culpa impedit illum, sunt rerum porro iste. Voluptatem reiciendis asperiores, officiis officia praesentium pariatur amet odit repellat esse quibusdam illum mollitia, necessitatibus minima debitis quas optio est hic!
-    Quo odio deserunt commodi velit ab incidunt consectetur earum aspernatur non, iste mollitia porro necessitatibus ut, expedita, dolore labore! Placeat autem praesentium quod inventore dolor nesciunt eaque fugit magnam officia!
-    Ut illum veritatis, odit repellendus blanditiis corrupti animi in, temporibus non mollitia eligendi, nostrum ea cumque rem ipsum laudantium iste aspernatur quaerat aliquam? Aperiam, perspiciatis tempore. Assumenda ipsa distinctio nobis?
-    Aut aperiam repellat voluptas. Harum, quo atque veniam quia earum obcaecati nesciunt alias laborum cumque eum consequatur totam labore beatae qui corrupti dignissimos ipsa reprehenderit odio culpa impedit sunt. Quaerat.
-    Dolor inventore laudantium saepe distinctio. Nobis in tempore doloremque reprehenderit distinctio, obcaecati eos dolorum, a quos voluptate ad corporis nihil dolores, alias quibusdam eaque quidem optio? Perspiciatis possimus quidem tenetur!
-    Provident repudiandae labore tenetur hic a ipsam ratione soluta? Accusamus dignissimos labore iure, suscipit reiciendis qui numquam molestiae odio. Unde labore enim saepe doloremque consectetur in assumenda incidunt molestias earum?
-    Est eligendi, ab porro harum sed ratione accusamus. Voluptatum laborum ab ea in impedit! Expedita nisi amet voluptas repellat debitis ab odio animi id libero corrupti, eligendi pariatur, esse laboriosam.
-    Nulla earum ex qui dicta distinctio quas, atque nostrum quia commodi inventore illum accusamus asperiores magnam at. Provident esse aliquid sit sint voluptatem ipsa repellat consequuntur distinctio, assumenda quis consectetur?
-    Quas rerum adipisci, eum quisquam, esse recusandae pariatur veritatis doloribus quaerat error quis quos ratione ex sequi vero harum molestias, velit dolorum minima. Deserunt rerum quo itaque eaque architecto beatae?
-    Error, distinctio mollitia nobis deserunt nesciunt, accusamus neque ad voluptatibus facilis sed obcaecati. Blanditiis amet voluptas, nesciunt omnis quae, porro quibusdam enim iste voluptatum commodi nostrum, totam vitae dolorum. Animi.
-    Magnam explicabo, quod aliquid facilis repellat vero culpa esse facere enim sequi quam aspernatur! Beatae dolor nisi quidem. Repellendus, quae! Iste mollitia beatae similique enim aspernatur. Accusamus unde animi aliquid.
-    Earum animi ipsa voluptas nesciunt! Ducimus reprehenderit commodi expedita sed nam quam iusto voluptatem excepturi accusamus eum praesentium ab aut nulla consectetur nemo, eius sequi mollitia error, nostrum id dolores?
-    Fugit maiores quis dolor dolores. Laboriosam similique quo dignissimos dolore in aspernatur autem mollitia quasi dolorum ipsum fugit ex, voluptas expedita ad earum blanditiis numquam odit inventore perferendis placeat excepturi!
-    Aspernatur repellat explicabo tempore laudantium minus assumenda perspiciatis accusamus possimus tenetur, consectetur animi illo nisi temporibus, quo, quod alias voluptate incidunt doloremque magni unde ducimus! Culpa nam vero blanditiis iusto!
-    Animi itaque molestias nesciunt quod laboriosam dolorem obcaecati consequatur et alias blanditiis eum dicta impedit dolore quisquam dolores temporibus dolorum voluptatem doloribus architecto fuga, est repellat explicabo aut error. Modi.
-    Officiis sed maiores doloribus fuga magni saepe enim nobis vel nihil harum, neque, accusamus sapiente placeat modi possimus consequuntur! Quidem doloremque quae delectus tempora. Aliquid harum quaerat possimus fugiat eligendi?
-    Consequatur tempora voluptas voluptatibus illo pariatur, praesentium totam quae velit dolorem, magni magnam corrupti ab cumque officiis ea officia ex possimus itaque corporis quo, necessitatibus ad tempore suscipit debitis! Amet!
-    Culpa aliquid numquam dolorem temporibus dolore suscipit obcaecati vero sequi tempora architecto recusandae, necessitatibus minus dolores. Rem quis et aliquid hic. Alias quos nostrum facilis vero. Repellat, pariatur? Dolores, quidem?
-    Magni vitae suscipit laborum corrupti sint minus doloribus consequuntur eos, enim blanditiis esse quasi architecto iure exercitationem sit fugit temporibus, alias, iusto nihil! Perspiciatis, laboriosam nemo. Repellendus accusantium ratione rerum.
-    Explicabo repellat molestiae magni aspernatur esse repudiandae. Repellendus labore corrupti facere doloribus culpa tempora debitis ipsum molestiae possimus tempore dicta sed minima, ut illo sint obcaecati magnam impedit molestias esse.
-    Ipsa velit repellendus sit fuga pariatur sed necessitatibus iusto quam, iure iste ea numquam, dolores ducimus voluptate. Totam ex quo sapiente voluptatum vero nihil distinctio! Esse quod corporis ducimus quam.
-    Quae, tempore dignissimos sapiente ipsam neque necessitatibus magnam nulla accusamus sunt quos assumenda corporis est unde maxime quaerat odio repellat impedit quo non repudiandae iste id similique nisi? Odio, est?
-    Placeat minima aliquam, asperiores, nostrum voluptatem fuga similique odit culpa earum perspiciatis magnam iure delectus dolorem iusto debitis incidunt dolores ut expedita! Soluta temporibus enim laudantium asperiores nostrum nam libero!
-    Maxime voluptatem fugiat culpa aut tempore quaerat, quas hic, magnam ducimus, enim non doloribus? Illo molestiae tempora quis pariatur totam omnis dolorum aut, quasi iusto, sit distinctio impedit quibusdam id.
-    Voluptates sit laudantium inventore eaque saepe tempora unde, et illum nisi dolore? Illo nobis explicabo fuga qui accusamus quas animi distinctio alias unde. Dolores, quibusdam doloremque sint assumenda quasi vitae!
-    Praesentium illo veniam amet quas fuga aut tenetur deleniti perspiciatis reiciendis labore tempore, quibusdam alias. Autem omnis, id repellendus delectus ipsum rerum ullam adipisci dolorem porro, debitis ad incidunt aliquam!
-    Cum debitis hic commodi veniam, in dolor. Magnam consectetur totam perspiciatis ullam blanditiis alias impedit laboriosam! In tenetur, quisquam accusamus fugit autem nulla dignissimos eum incidunt. Hic voluptate quisquam quas.
-    Cum ipsam accusantium explicabo optio assumenda quaerat autem placeat, animi repellendus eos ipsum, magni debitis voluptates culpa mollitia esse nostrum voluptatibus, expedita earum quos. Libero autem fugit quas dicta accusantium?
-    Quo, repellendus excepturi quidem corporis nobis unde? Aliquid, iure? Numquam deserunt nulla eaque illo officiis quo, impedit nostrum voluptatem non praesentium qui odit voluptate dolorum quam libero dolore pariatur dignissimos!
-    Unde numquam, accusamus dolorum maiores tempora laudantium repellendus commodi sequi dolorem quos consectetur officiis assumenda architecto placeat culpa aspernatur facere? Tempore iusto blanditiis fuga iure neque accusantium cumque voluptate necessitatibus?
-    Repellat beatae, laborum tempora saepe commodi quaerat id quisquam illum, dignissimos facere magni officiis eum, vel omnis nulla ducimus ipsam. Est ullam et delectus iste sapiente inventore cumque nemo voluptatem?
-    Expedita vel obcaecati officiis fugit sed vitae incidunt, cupiditate earum nihil odit dignissimos tempora voluptatibus nemo asperiores reprehenderit, mollitia quo ipsam eveniet, facilis aspernatur eligendi quae? Reiciendis ratione totam dolor?
-    Magni consequuntur ipsa quia laudantium, debitis in libero assumenda nesciunt rem quidem fugit exercitationem id pariatur distinctio, explicabo ipsam cumque quos minima quae quam perspiciatis. Beatae cumque odio commodi facere.
-    Minus molestiae ad, est voluptatibus nisi vero deserunt laborum modi officia enim velit ab quibusdam doloremque, adipisci facilis necessitatibus. Nemo quaerat, aspernatur consectetur quasi incidunt placeat inventore omnis magnam cum.
-    Debitis nihil facere tempore quo mollitia provident eveniet assumenda iste distinctio natus unde, at odit quaerat voluptatem minus nesciunt, iure nam dicta quisquam. Magnam iure sequi laudantium! Voluptatibus, et dicta.
-    Inventore ab repellendus natus culpa voluptates dolores in fugiat ullam, alias totam numquam adipisci doloribus sunt quidem iste maiores sequi aperiam explicabo tenetur exercitationem distinctio ad architecto voluptatibus unde! Doloremque!
-    Explicabo, facere quasi earum rerum provident tempore numquam rem alias reprehenderit illum enim nisi, asperiores vitae qui. Laborum facere voluptatum, provident blanditiis iste libero doloremque veniam voluptatem alias suscipit quas.
-    Nisi tenetur, mollitia voluptate voluptatum, nostrum quam harum odit unde nam nulla dicta sequi nesciunt distinctio asperiores quisquam culpa voluptatibus architecto id ipsa, maiores saepe cum pariatur! Aliquid, cupiditate eaque.
-    Dolore quo error qui ab, provident, nostrum magni dolorem reprehenderit esse necessitatibus distinctio. Aut sunt tempore earum et esse, magnam qui autem eaque sint quidem vero molestias iure alias velit.
-    Eveniet debitis dolorem culpa, reprehenderit, qui inventore beatae dolor incidunt itaque nemo placeat accusantium laboriosam quasi. Dolore enim quidem laudantium possimus cumque autem temporibus minima officiis quisquam, odit provident dicta.
-    Eos animi obcaecati error, architecto, soluta voluptatem modi vel dolorem ex excepturi eligendi nihil suscipit provident doloribus quae. Eum vel sint delectus atque, magnam illum reprehenderit assumenda totam minus provident.
-    Saepe, neque tempora. Accusamus doloremque dicta quisquam repellat hic cupiditate dolore ullam ratione possimus ex eaque sapiente, a nemo veritatis quasi obcaecati ipsa commodi optio vel vitae nisi dolorum? Non!
-    Eaque sit rem sapiente consectetur est, voluptatibus similique, ipsam omnis odio dicta expedita. Sit ducimus earum impedit eligendi esse quod facilis sint, cumque, obcaecati aperiam ad voluptas odit dolores? Laboriosam.
-    Eveniet, tempora consectetur fugit unde voluptatem provident dolores laudantium rerum consequuntur, pariatur quasi optio officia corrupti tenetur molestiae eligendi sequi voluptatibus, blanditiis repudiandae labore! Corrupti odit aut debitis quod. Id.
-    Reiciendis possimus similique qui error, autem quas, ex cumque odit et, vel vero voluptatem libero accusantium quo aut praesentium voluptates consequatur quae non fugit saepe esse. Tempora expedita eum eaque?
-    Aliquam eum facere dolor dolore nobis laboriosam ipsa perferendis vero suscipit ea adipisci possimus sit nihil, deserunt non blanditiis ratione distinctio, doloremque iure ab nemo veritatis accusantium vitae! Aspernatur, voluptatibus.
-    Corporis maxime odit pariatur a doloribus nesciunt facilis et explicabo, repudiandae magni itaque repellat mollitia veniam magnam corrupti nulla veritatis quas aliquid necessitatibus recusandae praesentium sed! Ex in id nihil.
-    Corporis, nulla libero facilis cupiditate praesentium aut asperiores alias fugit dolores enim iure rem pariatur eaque illum consectetur natus eius! Fugit sequi ea quas eos ad, nobis voluptatum maxime perspiciatis!
-    Cum magni cumque molestias aliquid, odio reiciendis ab nihil voluptate unde, corrupti impedit numquam necessitatibus exercitationem deleniti nobis mollitia. Perspiciatis molestiae consequuntur mollitia officiis illum impedit quidem itaque, quis vero!
-    Est dolore earum magnam consectetur ullam quo unde ut esse, assumenda asperiores harum inventore corrupti similique doloremque maxime tempore aut! Alias repudiandae cupiditate vero eum culpa veritatis tenetur animi est?
-    Ex quas animi rem laudantium deserunt iusto obcaecati a aperiam porro voluptatibus ut similique, aut illo? Ex incidunt nihil consectetur labore officia. Atque pariatur tenetur obcaecati aperiam a, reiciendis sit?
-    Odit suscipit magni laborum qui officiis facere soluta provident minus ullam, laudantium delectus quibusdam. Fugiat voluptates doloremque magnam consequatur eligendi, facilis officiis veniam reiciendis iste ipsum libero saepe ducimus eius!
-    Natus expedita inventore fugiat a beatae soluta corporis obcaecati, cupiditate recusandae. Delectus reiciendis dolores fuga modi aperiam hic, commodi assumenda officiis eaque sit ducimus asperiores nobis, iusto, quidem quos ea.
-    Voluptatum labore inventore debitis, veniam voluptates dolor, ex dicta delectus velit fugiat voluptas maiores distinctio totam sapiente sunt tempore libero explicabo? A possimus accusamus ex similique beatae. Nesciunt, quas rerum!
-    Odit maiores cupiditate ipsam quos ad enim quo, eius pariatur id recusandae hic maxime voluptatem alias reprehenderit debitis atque rem blanditiis nulla aut qui eveniet iusto quisquam quas laboriosam. Omnis.
-    Laboriosam possimus assumenda, necessitatibus voluptate corporis sapiente consectetur, maxime hic, optio a ipsum. Aliquid incidunt odio rerum, libero aut quia! Aspernatur sit quisquam possimus accusantium in voluptatum sint qui explicabo.
-    Nihil odio eum mollitia pariatur velit impedit consequuntur, eius molestiae quod quidem! Doloremque enim molestias corporis aliquid odio doloribus dolores labore quasi necessitatibus, sunt obcaecati rerum nam, accusantium temporibus beatae!
-    Commodi explicabo illo animi dolorem rerum provident itaque consectetur incidunt quia, voluptatem voluptas quo voluptate corrupti debitis ullam! Dolores tempora optio atque esse beatae ab. Neque dignissimos accusantium quasi ducimus?
-    Nemo cupiditate enim autem eveniet nulla! Voluptatem fugit sint quibusdam eaque nulla, explicabo fuga at dolor voluptate ipsam nam earum ipsa unde placeat aperiam? Laboriosam nulla veritatis eligendi ad similique.
-    Beatae doloremque tempore aliquid recusandae aut. Reiciendis autem magnam et ea minima voluptates, minus, perspiciatis nobis esse eaque porro repudiandae accusamus? Sequi incidunt soluta nostrum, commodi vitae doloremque reprehenderit autem.
-    Rem repellendus ratione iste molestias nesciunt ex ipsa quae accusamus, ut obcaecati quisquam. Veniam sequi error ipsam, libero pariatur saepe deserunt quas nemo explicabo numquam deleniti quibusdam ex hic odit.
-    Aperiam similique eveniet labore omnis quam. Blanditiis error unde nisi architecto quisquam ut, voluptatibus, a sit exercitationem natus saepe quibusdam eveniet quod aliquid perspiciatis harum iste cum officiis, inventore delectus!
-    Nisi libero excepturi in debitis ex quisquam omnis iure? Doloribus id voluptatum suscipit, ut quidem unde praesentium incidunt ad? Eius ad et, facilis iusto recusandae ex minus unde commodi temporibus.
-    Atque mollitia sapiente fugiat accusamus alias minus eaque magnam voluptatem repellat provident delectus, deleniti dolores modi consequatur a nam, adipisci, sint exercitationem suscipit dolore numquam iste perferendis itaque? Ut, reiciendis?
-    Rem tempore fugiat, consequuntur sit repudiandae aperiam culpa suscipit odit impedit aliquid quis earum temporibus quae molestiae ratione! Distinctio excepturi, ratione illum est tempore ut at adipisci illo recusandae quam!
-    Optio numquam odio provident ipsam hic, at quo et? Quam, similique animi. Incidunt, doloremque sunt provident nostrum qui dolore cumque dicta eveniet modi. Labore ratione doloremque doloribus adipisci aliquam eaque!
-    Odit optio at quis fuga vel sed in molestiae, ipsum, aut doloremque tempore vitae. Culpa provident, quod ratione sint numquam id, vero natus et, sed libero at. Adipisci, quod ducimus.
-    Ullam reprehenderit natus perferendis unde quas hic sunt rem explicabo beatae molestiae voluptates, tenetur exercitationem facilis, pariatur non optio assumenda autem facere ex? Aut dolorum praesentium cumque numquam. Dolorum, a!</p>
-    <section id="footer" class="container p-3">
-        <div class="upper-footer justify-content-between d-flex">
-            <div class="footer-links d-flex justify-content-start">
-                <a href="#"><svg id="footerTitle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g><path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path></g></svg></a>
-                <p class="ml-3 mt-3">@ 2021 NEWSWEEK DIGITAL LLC</p>
+    <headr id="navBar_Container">
+      <div class="container middle-nav d-none d-md-block">
+        <ul class="nav nav-stacked justify-content-start">
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">U.S.</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">World</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Business</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Tech & Science</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Culture</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Newsgeek</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Sports</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Health</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">The Debate</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Experts</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 middleNavLinks">Vantage</a>
+          </li>
+          <li class="nav-item p-2">
+            <input
+              class="nav-link p-2 middleNavLinks d-inline w-25 border-0"
+              placeholder="Search"
+            /><i class="fa fa-search ml-4" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="container lower-nav mb-3 d-none d-md-block">
+        <hr class="mx-5 my-0" />
+        <ul
+          class="nav nav-tabs nav-stacked justify-content-start mx-2 font-weight-bolder"
+        >
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link lowerLinks font-weight-bolder"
+              id="lowerLinks1"
+              >TRENDING</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">JOE BIDEN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">DONALD TRUMP</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">CORONAVIRUS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">STIMULUS PACKAGE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">VACCINE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">CAPITOL RIOTS</a>
+          </li>
+        </ul>
+      </div><
+    </header>
+    <section class="mainbody container bg-white">
+      <div class="column-articles row">
+        <!-- COLUMN 1 -->
+        <div class="column1 col-3">
+          <div class="row">
+            <div class="card col-8" style="width: 14rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
-            <div class="footer-social-media d-flex">
-                <div class="footer-social-media mt-3 d-flex">
-                    <a href="#"><i class="fab fa-facebook-square icons ml-1"></i></a>
-                    <a href="#"><i class="fab fa-twitter icons ml-1"></i></a>
-                    <a href="#"><i class="fab fa-youtube icons ml-1"></i></a>
-                    <a href="#"><i class="fab fa-instagram icons ml-1"></i></a>
-                    <a href="#"><i class="fab fa-tumblr icons ml-1"></i></a>
-                    <a href="#"><i class="fab fa-linkedin icons ml-1"></i></a>
+
+            <div class="card col-8" style="width: 14rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card col-8" style="width: 14rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card col-8" style="width: 14rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card col-8" style="width: 14rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- COLUMN 2 -->
+        <div class="column2 col-5">
+          <div class="row">
+            <div class="card col-8" style="width: 14rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <hr />
+            <div class="card col-8 flex-row">
+              <img src="..." class="card-img-left" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card col-4" style="width: 7rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-4" style="width: 7rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-4" style="width: 7rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-4" style="width: 7rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-4" style="width: 7rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-4" style="width: 7rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
                   </div>
             </div>
+            <div class="row">
+                <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                  <div class="card col-8 flex-row">
+                    <img src="..." class="card-img-left" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to additional
+                        content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+          </div>
         </div>
-        <hr class=" my-0">
-        <ul id="menuItems" class="nav text-left justify-content-start flex-column flex-sm-row">
-            <li class="nav-item">
-                <a href="" class="nav-link middleNavLinks">Editions</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">U.S Edition</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">日本</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Pakistan</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Polska</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Romania</a>
-            </li>
-        </ul>
-        <ul id="menuItems" class="nav text-left justify-content-start flex-column flex-sm-row">
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">About us</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Corrections</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Contact us</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Editorial guidelines</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Advertise</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Copyright</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Terms & Conditions</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Privacy Policy</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Cookie Policy</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Terms of Sale</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Archive</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">Announcements</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link footerNavLinks">GDPR Privacy Settings</a>
-            </li>
-        </ul>
+        <!-- COLUMN 3 -->
+        <div class="column3 col-3">
+            <div class="row">
+                <div class="thedebate">
+                    <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <hr class="vs">
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="theopinion">
+                    <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                      <div class="card col-8 flex-row">
+                        <img src="..." class="card-img-left" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to additional
+                            content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
     </section>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    <footer id="footer" class="container p-3">
+      <div class="upper-footer justify-content-between d-flex">
+        <div class="footer-links d-flex justify-content-start">
+          <a href="#"
+            ><svg
+              id="footerTitle"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 395.6 60"
+              style="enable-background: new 0 0 395.6 60"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g></svg
+          ></a>
+          <p class="ml-3 mt-3">@ 2021 NEWSWEEK DIGITAL LLC</p>
+        </div>
+        <div class="footer-social-media d-flex">
+          <div class="footer-social-media mt-3 d-flex">
+            <a href="#"><i class="fab fa-facebook-square icons ml-1"></i></a>
+            <a href="#"><i class="fab fa-twitter icons ml-1"></i></a>
+            <a href="#"><i class="fab fa-youtube icons ml-1"></i></a>
+            <a href="#"><i class="fab fa-instagram icons ml-1"></i></a>
+            <a href="#"><i class="fab fa-tumblr icons ml-1"></i></a>
+            <a href="#"><i class="fab fa-linkedin icons ml-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-0" />
+      <ul
+        id="menuItems"
+        class="nav text-left justify-content-start flex-column flex-sm-row"
+      >
+        <li class="nav-item">
+          <a href="" class="nav-link middleNavLinks">Editions</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">U.S Edition</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">日本</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Pakistan</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Polska</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Romania</a>
+        </li>
+      </ul>
+      <ul
+        id="menuItems"
+        class="nav text-left justify-content-start flex-column flex-sm-row"
+      >
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">About us</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Corrections</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Editorial guidelines</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Advertise</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Copyright</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Terms & Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Cookie Policy</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Terms of Sale</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">Announcements</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link footerNavLinks">GDPR Privacy Settings</a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
