@@ -100,7 +100,8 @@ i {
 // Cards
 
 .card-title,
-.card-text {
+.card-text,
+.black {
     color: black;
 }
 
@@ -108,14 +109,32 @@ i {
     position: relative;
 }
 
-.card-img-overlay > .card-text {
+.magImgCont {
+    position: relative;
+}
+
+.magOverlay,
+.magOverlay > a {
+    position: absolute;
+    padding: 6px 15px 6px 15px;
+    bottom: 0;
+    left: 0;
+    color: red;
+    font-size: 14px;
+    background: rgba(300, 300, 300, 0.8);
+    text-decoration: none;
+}
+
+.card-img-overlay > .card-text,
+.card-img-overlay > .card-text > a {
     position: absolute;
     padding: 6px 15px 6px 15px;
     bottom: 0;
     left: 0;
     color: red;
     font-size: 18px;
-    background: rgba(300, 300, 300, 0.8)
+    background: rgba(300, 300, 300, 0.8);
+    text-decoration: none;
 }
 
 .card {
@@ -135,6 +154,7 @@ i {
     font-size: 16px;
 }
 
+<<<<<<< Updated upstream
 .card-img-overlay-grid > .card-text {
     position: absolute;
     padding: 6px 15px 6px 15px;
@@ -160,4 +180,22 @@ i {
     margin-top: 10px;
     border: 1px grey solid;
     border-radius: 0;
+=======
+// Magazine
+
+.magBtn1 {
+    background: orangered;
+    color: white;
+}
+.magBtn2 {
+    color: orangered;
+}
+
+.magCard {
+    font-size: 18px;
+}
+
+.featuresLink:hover {
+    background: #eee;
+>>>>>>> Stashed changes
 }
