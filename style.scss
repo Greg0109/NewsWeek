@@ -12,8 +12,8 @@ body {
 }
 
 .mainbody {
-    max-width: 1310px;
-    overflow-x: hidden;
+  max-width: 1310px;
+  overflow-x: hidden;
 }
 
 .icons {
@@ -42,7 +42,8 @@ footer {
   bottom: 0;
 }
 
-#footerTitle {
+#footerTitle,
+#footerTitle2 {
   fill: red;
   height: 100%;
   width: 100%;
@@ -60,15 +61,15 @@ footer {
 }
 
 .subscribebutton2 {
-    font-weight: bold;
-    color: black;
-    border-radius: 20px;
-    font-size: 10px;
-  }
+  font-weight: bold;
+  color: black;
+  border-radius: 20px;
+  font-size: 10px;
+}
 
 .togglerbutton {
-    width: 5px;
-    height: auto;
+  width: 5px;
+  height: auto;
 }
 
 .middleNavLinks,
@@ -127,7 +128,7 @@ i {
 }
 
 .card-text-opinion {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .cardImgCont {
@@ -212,31 +213,32 @@ i {
 }
 
 .mobilebar {
-    padding-bottom: -5px;
+  padding-bottom: -5px;
 }
 
 .morestoriescard {
-    border-top: 1px grey solid;
-    border-radius: 0;
+  border-top: 1px grey solid;
+  border-radius: 0;
 }
-  
-.vsline::before,.vsline::after {
-    content: "";
-    display: block;
-    background-color: #d9d9d9;
-    height: 2px;
-    position: absolute;
-    width: 100%;
-    top: calc(50% - 2px);
-    z-index: -1;
+
+.vsline::before,
+.vsline::after {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 2px);
+  z-index: -1;
 }
 
 .vscircle {
-    margin: auto;
-    border-radius: 100%;
-    width: 32px;
-    height: 32px;
-    background-color: #000;
-    color: #d6d6d6;
-    font: bold 14px/32px "Roboto Condensed", sans-serif;
-  }
+  margin: auto;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  font: bold 14px/32px "Roboto Condensed", sans-serif;
+}
