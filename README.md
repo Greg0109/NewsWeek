@@ -3,10 +3,10 @@
 > This is the Project 2 in the Microverse course
 
 ### View in browser
-Not available yet
+![Live](https://greg0109.github.io/NewsWeek/)
 
 ### Screenshot
-Insert screenshot here
+![Screenshot](assets/NewsWeek.png)
 
 ## Built With
 
