@@ -29,107 +29,109 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <!-- Main Container -->
-  <div class="container-fluid">
+  <body class="mainbody mx-auto w-100">
     <!-- Navbar Mobile -->
-    <header class="d-md-none">
-      <nav class="navbar navbar-dark d-flex flex-wrap w-100">
-        <div class="navbar-nav mr-5">
-          <img
-            class="d-md-none img-fluid"
-            src="./assets/logo-small.png"
-            alt="logo"
-            height="30"
-            width="70"
-          />
+    <nav class="d-md-none sticky-top navbar navbar-dark d-flex">
+      <div class="navbar-nav mobilebar d-flex">
+        <div class="logo mr-auto d-flex row">
+          <div class="mx-auto col-6">
+            <a class="navbar-brand mx-auto" href="#">
+              <img
+                  class="img-fluid"
+                  id="newsTitle2"
+                  src="./assets/mainlogo.png"
+                  alt="logo"
+                />
+            </a>
+          </div>
+          <div class="navbar-collapse justify-content-end col-6">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="nav-link h-auto text-white" href="#" title="Title"><i class="fa fa-address-card" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <span
+                  class="navbar-nav btn btn-warning font-weight-bolder text-center subscribebutton2 h-auto px-2"
+                  >SUBSCRIBE</span
+                >
+              </li>
+              <li class="list-inline-item">
+                <div class="togglerbutton">
+                  <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target=".dual-collapse2"
+                title="Title"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Left </a>
-            </li>
-          </ul>
-        </div>
-        <span>
-          <i class="fas fa-user icons text-white mr-2"></i>
-        </span>
-        <span
-          class="navbar-nav btn btn-warning d-inline-flex text-center subscribebutton2 h-auto px-2"
-          >SUBSCRIBE</span
-        >
-        <div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target=".dual-collapse2"
-            title="Title"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+      </div>
 
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">U.S.</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">World</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Business</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Tech & Science</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Culture</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Newsgeek</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Sports</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Health</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">The Debate</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Experts</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Vantage</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">JOE BIDEN</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">DONALD TRUMP</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">CORONAVIRUS</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">STIMULUS PACKAGE</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">VACCINE</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">CAPITOL RIOTS</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">U.S.</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">World</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Business</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Tech & Science</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Culture</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Newsgeek</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Sports</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Health</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">The Debate</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Experts</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Vantage</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">JOE BIDEN</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">DONALD TRUMP</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">CORONAVIRUS</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">STIMULUS PACKAGE</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">VACCINE</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">CAPITOL RIOTS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- NavBar 1-->
-    <header class="d-none d-md-block mt-5 border-red">
+    <header class="d-none d-md-block mt-5 border-red sticky-top pb-3 mt-auto">
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0">
           <ul class="navbar-nav mr-auto">
@@ -138,17 +140,14 @@
             </li>
           </ul>
         </div>
-        <div class="mx-auto order-0 d-inline-flex">
+        <div class="mx-auto">
           <a class="navbar-brand mx-auto" href="#">
-            <div class="navbar-nav mr-5">
-              <img
-              class="d-none d-md-flex text-white img-fluid"
-              width="300"
-              id="newsTitle"
-              src="./assets/mainlogo.svg"
-              alt="logo"
+            <img
+                class="img-fluid"
+                id="newsTitle"
+                src="./assets/mainlogo.png"
+                alt="logo"
               />
-            </div>
           </a>
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -158,17 +157,17 @@
             </li>
             <li class="nav-item">
               <span
-              class="navbar-nav btn btn-warning d-inline-flex font-weight-bolder text-center subscribebutton2 h-auto px-3"
-              >SUBSCRIBE</span
+                class="navbar-nav btn btn-warning d-inline-flex font-weight-bolder text-center subscribebutton2 h-auto px-3"
+                >SUBSCRIBE</span
               >
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    
+
     <!-- Navbar Lower -->
-    <header id="navBar_Container">
+    <header id="navBar_Container" class="d-none d-lg-block">
       <div class="middle-nav d-none d-md-block">
         <ul class="nav nav-stacked justify-content-start d-flex flex-nowrap">
           <li class="nav-item p-2">
@@ -206,8 +205,8 @@
           </li>
           <li class="nav-item p-2">
             <input
-            class="nav-link p-2 middleNavLinks d-inline w-25 border-0"
-            placeholder="Search"
+              class="nav-link p-2 middleNavLinks d-inline w-25 border-0"
+              placeholder="Search"
             /><i class="fa fa-search ml-4" aria-hidden="true"></i>
           </li>
         </ul>
@@ -215,43 +214,42 @@
       <div class="lower-nav mb-3 d-none d-md-block">
         <hr class="mx-5 my-0" />
         <ul
-        class="nav nav-tabs nav-stacked justify-content-start mx-2 font-weight-bolder"
+          class="nav nav-tabs nav-stacked justify-content-start mx-2 font-weight-bolder"
         >
-        <li class="nav-item">
-          <a
-          href="#"
-          class="nav-link lowerLinks font-weight-bolder"
-          id="lowerLinks1"
-          >TRENDING</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link lowerLinks">JOE BIDEN</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link lowerLinks">DONALD TRUMP</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link lowerLinks">CORONAVIRUS</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link lowerLinks">STIMULUS PACKAGE</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link lowerLinks">VACCINE</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link lowerLinks">CAPITOL RIOTS</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  
-  
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link lowerLinks font-weight-bolder"
+              id="lowerLinks1"
+              >TRENDING</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">JOE BIDEN</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">DONALD TRUMP</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">CORONAVIRUS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">STIMULUS PACKAGE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">VACCINE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lowerLinks">CAPITOL RIOTS</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-  
-  <!-- Article Columns -->
-  <div class="main row container-fluid d-flex align-items-start align-self-sm-center justify-content-around col-12">
+    <!-- Article Columns -->
+    <div
+      class="main row container-fluid d-flex align-items-start align-self-sm-center justify-content-around col-12"
+    >
       <!-- Article Columns -->
 
       <!-- Top Story Mobile -->
@@ -276,14 +274,14 @@
               <div class="body container-fluid">
                 <a href="#">
                   <h4 class="card-title text-black font-weight-bold">
-                    Joe Biden's First Executive Actions Undo Many of
-                    Donald Trump's
+                    Joe Biden's First Executive Actions Undo Many of Donald
+                    Trump's
                   </h4>
                 </a>
                 <p class="card-text">
-                  Actions related to the COVID-19 crisis, climate change
-                  and racial equality are to be among the first taken as
-                  he begins his tenure.
+                  Actions related to the COVID-19 crisis, climate change and
+                  racial equality are to be among the first taken as he begins
+                  his tenure.
                 </p>
               </div>
             </div>
@@ -293,11 +291,10 @@
 
       <!-- Column1 -->
       <div class="row container-fluid d-flex col-md-4 order-2 order-md-1">
-
         <!-- Featured Stories -->
         <div class="col-md-12 p-0 order-2 order-md-1">
           <h6 class="container-fluid">FEATURED STORIES</h6>
-  
+
           <div class="col-md-12 text-center p-0">
             <div class="col-md-12">
               <div class="card mb-3 text-left">
@@ -316,14 +313,13 @@
                 <div class="body">
                   <a href="#">
                     <h4 class="card-title text-black font-weight-bold">
-                      The 73 People Pardoned by Donald Trump on His Last Day
-                      As President
+                      The 73 People Pardoned by Donald Trump on His Last Day As
+                      President
                     </h4>
                   </a>
                   <p class="card-text">
-                    Notable people pardoned by Trump today include former
-                    White House chief strategist Steve Bannon and rapper Lil
-                    Wayne.
+                    Notable people pardoned by Trump today include former White
+                    House chief strategist Steve Bannon and rapper Lil Wayne.
                   </p>
                 </div>
               </div>
@@ -343,13 +339,12 @@
                 <div class="body">
                   <a href="#">
                     <h4 class="card-title text-black font-weight-bold">
-                      Donald Trump Can Issue Secret Pardons, but They're
-                      Risky
+                      Donald Trump Can Issue Secret Pardons, but They're Risky
                     </h4>
                   </a>
                   <p class="card-text">
-                    Trump chose not to issue pardons for himself of his
-                    personal attorney, former New York Mayor Rudy Giuliani.
+                    Trump chose not to issue pardons for himself of his personal
+                    attorney, former New York Mayor Rudy Giuliani.
                   </p>
                 </div>
               </div>
@@ -374,8 +369,8 @@
                   </a>
                   <p class="card-text">
                     Newsweek Expert Forum creates cohort of thought leaders,
-                    pioneering thinkers to share insights, expertise from
-                    range of professions, industries.
+                    pioneering thinkers to share insights, expertise from range
+                    of professions, industries.
                   </p>
                 </div>
               </div>
@@ -420,8 +415,7 @@
                 <div class="body">
                   <a href="#">
                     <h4 class="card-title text-black font-weight-bold">
-                      Joe Biden Immigration Orders Upend Donald Trump's
-                      Legacy
+                      Joe Biden Immigration Orders Upend Donald Trump's Legacy
                     </h4>
                   </a>
                   <p class="card-text">
@@ -430,174 +424,176 @@
                   </p>
                 </div>
               </div>
-              </div>
             </div>
           </div>
+        </div>
 
-          <!-- Sponsored Links -->
-          <div class="col-md-12 p-0 order-4 order-md-2 d-none d-md-block">
-            <div class="card text-left sponsoredinsight">
-              <div class="cardImgCont">
-                <img
-                  src="./assets/forest-lake.jpg"
-                  alt="Error loading image"
-                  class="card-img-top"
-                />
-                <div class="card-img-overlay">
-                  <p class="card-text font-weight-bolder">
-                    <a href="#"> SPONSORED INSIGHT </a>
-                  </p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="#">
-                  <h4 class="card-title text-black font-weight-bold">
-                    Hokkaido: Japan’s Northern Frontier
-                  </h4>
-                </a>
-                <p class="card-text">
-                  Featuring a unique history, uninhibited wildness and at
-                  times otherworldly natural spectacles, Hokkaido offers
-                  an experience that is completely different from the rest
-                  of Japan.
+        <!-- Sponsored Links -->
+        <div class="col-md-12 p-0 order-4 order-md-2 d-none d-md-block">
+          <div class="card text-left sponsoredinsight">
+            <div class="cardImgCont">
+              <img
+                src="./assets/forest-lake.jpg"
+                alt="Error loading image"
+                class="card-img-top"
+              />
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#"> SPONSORED INSIGHT </a>
                 </p>
               </div>
             </div>
-            <div class="card text-left sponsoredinsight">
-              <div class="cardImgCont">
-                <img
-                  src="./assets/doha.jpg"
-                  alt="Error loading image"
-                  class="card-img-top"
-                />
-                <div class="card-img-overlay">
-                  <p class="card-text font-weight-bolder">
-                    <a href="#"> SPONSORED INSIGHT </a>
-                  </p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="#">
-                  <h4 class="card-title text-black font-weight-bold">
-                    What Makes International Schools so Special?
-                  </h4>
-                </a>
-                <p class="card-text">
-                  One of the single most important decisions you make for
-                  your child is whom to entrust with their education. See
-                  why so many parents are turning to International
-                  Schools.
-                </p>
-              </div>
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title text-black font-weight-bold">
+                  Hokkaido: Japan’s Northern Frontier
+                </h4>
+              </a>
+              <p class="card-text">
+                Featuring a unique history, uninhibited wildness and at times
+                otherworldly natural spectacles, Hokkaido offers an experience
+                that is completely different from the rest of Japan.
+              </p>
             </div>
-            <div class="card text-left sponsoredinsight">
-              <div class="cardImgCont">
-                <img
-                  src="./assets/computerad.png"
-                  alt="Error loading image"
-                  class="card-img-top"
-                />
-                <div class="card-img-overlay">
-                  <p class="card-text font-weight-bolder">
-                    <a href="#"> RANKINGS </a>
-                  </p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="#">
-                  <h4 class="card-title text-black font-weight-bold">
-                    America's Most Responsible Companies 2021
-                  </h4>
-                </a>
-                <p class="card-text">
-                  We partnered with Statista to rank the country's Most
-                  Responsible Companies. They share the values that we all
-                  prioritize, and that's worth recognizing in 2021
-                </p>
-              </div>
-            </div>
-            <div class="card text-left sponsoredinsight">
-              <div class="cardImgCont">
-                <img
-                  src="./assets/house.jpg"
-                  alt="Error loading image"
-                  class="card-img-top"
-                />
-                <div class="card-img-overlay">
-                  <p class="card-text font-weight-bolder">
-                    <a href="#"> SPONSORED INSIGHT </a>
-                  </p>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="#">
-                  <h4 class="card-title text-black font-weight-bold">
-                    This Startup Is Making Long Distance Real Estate
-                    Investing Possible for Millennials
-                  </h4>
-                </a>
-                <p class="card-text">
-                  75% of Roofstock users are first-time real estate
-                  investors, and more than half are under 35.
-                </p>
-              </div>
           </div>
+          <div class="card text-left sponsoredinsight">
+            <div class="cardImgCont">
+              <img
+                src="./assets/doha.jpg"
+                alt="Error loading image"
+                class="card-img-top"
+              />
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#"> SPONSORED INSIGHT </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title text-black font-weight-bold">
+                  What Makes International Schools so Special?
+                </h4>
+              </a>
+              <p class="card-text">
+                One of the single most important decisions you make for your
+                child is whom to entrust with their education. See why so many
+                parents are turning to International Schools.
+              </p>
+            </div>
           </div>
-
+          <div class="card text-left sponsoredinsight">
+            <div class="cardImgCont">
+              <img
+                src="./assets/computerad.png"
+                alt="Error loading image"
+                class="card-img-top"
+              />
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#"> RANKINGS </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title text-black font-weight-bold">
+                  America's Most Responsible Companies 2021
+                </h4>
+              </a>
+              <p class="card-text">
+                We partnered with Statista to rank the country's Most
+                Responsible Companies. They share the values that we all
+                prioritize, and that's worth recognizing in 2021
+              </p>
+            </div>
+          </div>
+          <div class="card text-left sponsoredinsight">
+            <div class="cardImgCont">
+              <img
+                src="./assets/house.jpg"
+                alt="Error loading image"
+                class="card-img-top"
+              />
+              <div class="card-img-overlay">
+                <p class="card-text font-weight-bolder">
+                  <a href="#"> SPONSORED INSIGHT </a>
+                </p>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title text-black font-weight-bold">
+                  This Startup Is Making Long Distance Real Estate Investing
+                  Possible for Millennials
+                </h4>
+              </a>
+              <p class="card-text">
+                75% of Roofstock users are first-time real estate investors, and
+                more than half are under 35.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Column 3 -->
-      <div class="row container-fluid d-flex col-md-3 order-3 order-md-3">
-
+      <div
+        class="row container-fluid d-flex col-md-3 order-3 order-md-3 d-md-none d-lg-block"
+      >
         <!-- The debate -->
-        <div class="col-md-12 container p-0 order-3 order-md-1 sticky-top">
+        <div class="col-md-12 container p-0 order-3 order-md-1 d-none d-sm-none d-lg-block">
           <div class="row text-left p-0">
             <h6 class="container-fluid">THE DEBATE</h6>
             <div class="col">
               <hr class="debateBorder" />
               <div class="card text-left">
                 <div class="row card-body">
-                  <a href="#">
-                    <img src="./assets/1.png" alt="Error loading image" class="img-fluid" />
+                  <a href="#" class="col-4">
+                    <img
+                      src="./assets/1.png"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
                   </a>
-                  <div class="col-9">
+                  <div class="col-8">
                     <a href="#">
                       <h6 class="card-title">
-                        <strong
-                          >Media Have Every Right to Cancel Trump</strong
-                        >
+                        <strong>Media Have Every Right to Cancel Trump</strong>
                       </h6>
                     </a>
                     <a href="#">
-                      <p class="card-text">
-                        BY <strong>FROMA HARROP</strong>
-                      </p>
+                      <p class="card-text">BY <strong>FROMA HARROP</strong></p>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="versusline">
-                <hr class="vsborder" />
+              <div class="vsline position-relative">
+                <div class="vscircle position-relative text-center">
+                  VS
+                </div>
               </div>
               <div class="card text-left">
                 <div class="row card-body">
-                  <div class="col-9">
+                  <div class="col-8">
                     <a href="#">
                       <h6 class="card-title">
                         <strong
-                          >After Parler Ban, Rein in Big Tech Now or Cease
-                          Being Free Citizens</strong
+                          >After Parler Ban, Rein in Big Tech Now or Cease Being
+                          Free Citizens</strong
                         >
                       </h6>
                     </a>
                     <a href="#">
-                      <p class="card-text">
-                        BY <strong>RACHEL BOVARD</strong>
-                      </p>
+                      <p class="card-text">BY <strong>RACHEL BOVARD</strong></p>
                     </a>
                   </div>
-                  <a href="#">
-                    <img src="./assets/2.png" alt="Error loading image" class="img-fluid" />
+                  <a href="#" class="col-4">
+                    <img
+                      src="./assets/2.png"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
                   </a>
                 </div>
               </div>
@@ -606,161 +602,174 @@
           <br />
           <hr class="debateBorder" />
           <h5 class="text-left grid-text">OPINION</h5>
-          <div class="row container">
-            <div class="card text-left">
-              <div class="row card-body">
+          <div class="row container-fluid ">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/3.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/3.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong>U.S. Supply Chain: Stop Driving Blind</strong>
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong>U.S. Supply Chain: Stop Driving Blind</strong>
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY FRANK CILLUFFO AND STEWART BAKER</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY FRANK CILLUFFO AND STEWART BAKER</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/4.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/4.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong
+                      >After Violence at the Capitol, Congress Must Ensure
+                      Election Integrity</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >After Violence at the Capitol, Congress Must Ensure
-                        Election Integrity</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY RICK SCOTT</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY RICK SCOTT</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/5.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/5.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong
+                      >Despite January 6, Trump Leaves a Legacy of Trust with Voters</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >Despite January 6, Trump Leaves a Legacy of Trust
-                        with Voters</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY NIGEL FARAGE</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY NIGEL FARAGE</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/6.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/6.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong
+                      >Narcissism and Nihilism on Capitol Hill</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >Narcissism and Nihilism on Capitol Hill</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY PHILIP JEFFERY</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY PHILIP JEFFERY</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/7.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/7.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong
+                      >Exit Trump, Tragic American Hero</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong>Exit Trump, Tragic American Hero</strong>
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY BRUCE ABRAMSON</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY BRUCE ABRAMSON</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/8.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/8.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong
+                      >As the 46th President Takes Office, Let's Discuss the 47th</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >As the 46th President Takes Office, Let's Discuss
-                        the 47th</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY MARK DAVIS</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY MARK DAVIS</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/9.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img src="./assets/9.png" alt="Error loading image" class="img-fluid" />
+                  <h6 class="card-title">
+                    <strong
+                      >Is the European Union Combating or Whitewashing Anti-Semitism?</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >Is the European Union Combating or Whitewashing
-                        Anti-Semitism?</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong
-                        >BY ABRAHAM COOPER AND MANFRED GERSTENFELD</strong
-                      >
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY ABRAHAM COOPER AND MANFRED GERSTENFELD</strong>
+                  </p>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- SPONSORED INSIGHT 3RD COLUMN -->
-        <div class="col-md-12 order-4 p-0 order-md-2 d-none d-md-block sticky-top">
+        <div
+          class="col-md-12 order-4 p-0 order-md-2 d-none d-md-block"
+        >
           <div class="card text-left sponsoredinsight">
             <div class="cardImgCont">
               <img
@@ -783,15 +792,19 @@
               </a>
               <p class="card-text">
                 With its pro-business agenda and open-border policy for
-                investors, the Central European nation is hoping to bounce
-                back from the COVID-19 crisis, while making greater
-                strides toward innovation, research and development.
+                investors, the Central European nation is hoping to bounce back
+                from the COVID-19 crisis, while making greater strides toward
+                innovation, research and development.
               </p>
             </div>
           </div>
           <div class="card text-left sponsoredinsight">
             <div class="cardImgCont">
-              <img src="./assets/miami.jpg" alt="Error loading image" class="card-img-top" />
+              <img
+                src="./assets/miami.jpg"
+                alt="Error loading image"
+                class="card-img-top"
+              />
               <div class="card-img-overlay">
                 <p class="card-text font-weight-bolder">
                   <a href="#"> SPONSORED INSIGHT </a>
@@ -801,13 +814,12 @@
             <div class="card-body">
               <a href="#">
                 <h4 class="card-title text-black font-weight-bold">
-                  Panama - Central America's Leading Investment
-                  Destination
+                  Panama - Central America's Leading Investment Destination
                 </h4>
               </a>
               <p class="card-text">
-                Panama is expected to rebound strongly in 2021, with
-                growth forecasted between 4% and 7%.
+                Panama is expected to rebound strongly in 2021, with growth
+                forecasted between 4% and 7%.
               </p>
             </div>
           </div>
@@ -832,10 +844,10 @@
                 </h4>
               </a>
               <p class="card-text">
-                If academic results, average class size, teacher
-                proficiency, pupil diversity and religious orthodoxy of
-                your child’s school are things that are important to you,
-                you should be looking at a private school.
+                If academic results, average class size, teacher proficiency,
+                pupil diversity and religious orthodoxy of your child’s school
+                are things that are important to you, you should be looking at a
+                private school.
               </p>
             </div>
           </div>
@@ -859,14 +871,31 @@
                 </h4>
               </a>
               <p class="card-text">
-                In partnership with Statista, we established a ranking
-                providing information and insights to help you during this
-                challenging time.
+                In partnership with Statista, we established a ranking providing
+                information and insights to help you during this challenging
+                time.
               </p>
+            </div>
+            <div class="card bg-grey bg-light">
+              <div class="d-flex justify-content-center align-middle px-3 pt-3">
+                <span class="icon-n d-block px-3"></span>
+                <img
+                  class="img-fluid d-inline-flex mr-2"
+                  src="./assets/logo-N.png"
+                  alt="logo"/>
+                <h6 class="text-black"><strong>START YOUR DAY WITH OUR TOP 5 ARTICLES</strong></h6>
+              </div>
+              <form class="d-flex flex-column align-items-center">
+                <div class="form-group pt-3 w-75">
+                  <label for="email">
+                    <input type="email" id="email" class="form-control" placeholder="Enter email">
+                  </label>
+                </div>
+                <button type="submit" class="btn bg-danger text-white my-0 w-75">FREE SIGN UP</button>
+              </form>
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Sponsored Links Mobile -->
@@ -891,10 +920,9 @@
               </h4>
             </a>
             <p class="card-text">
-              Featuring a unique history, uninhibited wildness and at
-              times otherworldly natural spectacles, Hokkaido offers
-              an experience that is completely different from the rest
-              of Japan.
+              Featuring a unique history, uninhibited wildness and at times
+              otherworldly natural spectacles, Hokkaido offers an experience
+              that is completely different from the rest of Japan.
             </p>
           </div>
         </div>
@@ -918,10 +946,9 @@
               </h4>
             </a>
             <p class="card-text">
-              One of the single most important decisions you make for
-              your child is whom to entrust with their education. See
-              why so many parents are turning to International
-              Schools.
+              One of the single most important decisions you make for your child
+              is whom to entrust with their education. See why so many parents
+              are turning to International Schools.
             </p>
           </div>
         </div>
@@ -945,9 +972,9 @@
               </h4>
             </a>
             <p class="card-text">
-              We partnered with Statista to rank the country's Most
-              Responsible Companies. They share the values that we all
-              prioritize, and that's worth recognizing in 2021
+              We partnered with Statista to rank the country's Most Responsible
+              Companies. They share the values that we all prioritize, and
+              that's worth recognizing in 2021
             </p>
           </div>
         </div>
@@ -967,21 +994,22 @@
           <div class="card-body">
             <a href="#">
               <h4 class="card-title text-black font-weight-bold">
-                This Startup Is Making Long Distance Real Estate
-                Investing Possible for Millennials
+                This Startup Is Making Long Distance Real Estate Investing
+                Possible for Millennials
               </h4>
             </a>
             <p class="card-text">
-              75% of Roofstock users are first-time real estate
-              investors, and more than half are under 35.
+              75% of Roofstock users are first-time real estate investors, and
+              more than half are under 35.
             </p>
           </div>
-      </div>
+        </div>
       </div>
 
       <!-- Column 2 -->
-      <div class="row container-fluid d-flex col-md-5 order-5 order-md-2">
-
+      <div
+        class="row container-fluid d-flex col-md-8 col-lg-5 order-5 order-md-2"
+      >
         <!-- Top Story -->
         <div class="col-md-12 p-0 order-1 order-md-1 d-none d-md-block">
           <h6 class="container">TOP STORY</h6>
@@ -1004,14 +1032,14 @@
                 <div class="body">
                   <a href="#">
                     <h4 class="card-title text-black font-weight-bold">
-                      Joe Biden's First Executive Actions Undo Many of
-                      Donald Trump's
+                      Joe Biden's First Executive Actions Undo Many of Donald
+                      Trump's
                     </h4>
                   </a>
                   <p class="card-text">
-                    Actions related to the COVID-19 crisis, climate change
-                    and racial equality are to be among the first taken as
-                    he begins his tenure.
+                    Actions related to the COVID-19 crisis, climate change and
+                    racial equality are to be among the first taken as he begins
+                    his tenure.
                   </p>
                 </div>
               </div>
@@ -1021,66 +1049,60 @@
 
         <!-- My Turn Column -->
         <div class="col-md-12 p-0 order-7 order-md-2">
-          <div class="col-md-12 text-center p-0">
+          <div class="col-md-12 text-left p-0">
             <h5 class="text-left grid-text container-md">My Turn</h5>
-              <div class="row container-md">
-                <div class="col-md-4 col-12">
-                  <div class="card text-left">
-                    <div class="cardImgCont">
-                      <img
-                        src="./assets/oldmen.jpg"
-                        alt="Error loading image"
-                        height="300"
-                        class="img-fluid card-img-top"
-                      />
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text grid-text">
-                      'I Married My Best Friend to Avoid Inheritance Tax'
-                      </p>
-                    </div>
+            <div class="row container-md">
+              <div class="col-md-4 col-12">
+                <div class="card text-left">
+                  <div class="cardImgCont">
+                    <img
+                      src="./assets/oldmen.jpg"
+                      alt="Error loading image"
+                      height="300"
+                      class="img-fluid card-img-top"
+                    />
                   </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="card text-left">
-                    <div class="cardImgCont">
-                      <img
-                        src="./assets/dogs.jpg"
-                        alt="Error loading image"
-                        height="300"
-                        class="img-fluid card-img-top"
-                      />
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text grid-text">
-                        'I've Rescued Hundreds of Special Needs Dogs'
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="card text-left">
-                    <div class="cardImgCont">
-                      <img
-                        src="./assets/somedude.jpg"
-                        alt="Error loading image"
-                        height="300"
-                        class="img-fluid card-img-top"
-                      />
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text grid-text">
-                        Why I Accepted Trump's Medal Of Arts
-                      </p>
-                    </div>
-                  </div>
+                  <p class="card-text grid-text">
+                    'I Married My Best Friend to Avoid Inheritance Tax'
+                  </p>
                 </div>
               </div>
+              <div class="col-md-4 col-12">
+                <div class="card text-left">
+                  <div class="cardImgCont">
+                    <img
+                      src="./assets/dogs.jpg"
+                      alt="Error loading image"
+                      height="300"
+                      class="img-fluid card-img-top"
+                    />
+                  </div>
+                  <p class="card-text grid-text">
+                    'I've Rescued Hundreds of Special Needs Dogs'
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="card text-left">
+                  <div class="cardImgCont">
+                    <img
+                      src="./assets/somedude.jpg"
+                      alt="Error loading image"
+                      height="300"
+                      class="img-fluid card-img-top"
+                    />
+                  </div>
+                  <p class="card-text grid-text">
+                    Why I Accepted Trump's Medal Of Arts
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-         <!-- Culture and Travel -->
-         <div class="col-md-12 p-0 order-8 order-md-3">
+        <!-- Culture and Travel -->
+        <div class="col-md-12 p-0 order-8 order-md-3 mt-3">
           <h5 class="text-left grid-text container-md">Culture & Travel</h5>
           <div class="row container-md">
             <div class="col-md-4 col-12">
@@ -1098,11 +1120,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-body">
-                  <p class="card-text grid-text">
-                    The Secrets to Happiness Around the World
-                  </p>
-                </div>
+                <p class="card-text grid-text">
+                  The Secrets to Happiness Around the World
+                </p>
               </div>
             </div>
             <div class="col-md-4 col-12">
@@ -1120,11 +1140,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-body">
-                  <p class="card-text grid-text">
-                    Where We Are Dreaming of Traveling in 2021
-                  </p>
-                </div>
+                <p class="card-text grid-text">
+                  Where We Are Dreaming of Traveling in 2021
+                </p>
               </div>
             </div>
             <div class="col-md-4 col-12">
@@ -1142,376 +1160,395 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-body">
-                  <p class="card-text grid-text">
-                    These Are the Top 100 Songs of 2020
-                  </p>
-                </div>
+                <p class="card-text grid-text">
+                  These Are the Top 100 Songs of 2020
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- More Stories -->
-        <div class="col-md-12 p-0 order-5 order-md-4">
+        <div class="col-md-12 p-0 order-5 order-md-4 mt-5">
           <h5 class="text-left grid-text">More Stories</h5>
-              <div class="row">
-                <div class="card container-md text-left morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/wall.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Biden's Biggest Challenge? 67,000 Migrants
-                            Stranded at U.S.-Mexico Border</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          The incoming president has not said what he plans
-                          to do with the tens of thousands of asylum-seekers
-                          living in limbo in crowded shelters and makeshift
-                          camps along the border.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
+          <div class="row">
+            <div class="card container-md text-left morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/wall.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
                 </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/deportationlow.webp"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Evangelicals, Police, Who Disliked Trump
-                            Immigration Policy May Back Reform</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          Religious conservatives and law-enforcement
-                          officers who were uncomfortable with family
-                          separations may be open to immigration reform.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/trump-tv.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Donald Trump Pardons Israeli Spy Handler Who
-                            Paid for American Secrets</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          The president's flurry of pardons include former
-                          Israeli air force colonel Aviem Sella, who
-                          recruited the infamous spy Jonathan Pollard.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/people-outside.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Joe Biden's Schedule for His First Day As
-                            President</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          Joe Biden will be sworn in as the 46th president
-                          of the United States at noon on Wednesday. Kamala
-                          Harris will become the 49th vice president.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/lights.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >U.S. Cut Russia Consulate Phones Before Trump's
-                            Last Day, Moscow Claims</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          The Russian embassy in Washington, DC has sent a
-                          diplomatic note to the State Department after the
-                          phones at its New York consulate stopped working.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/clinic-escort.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Mississippi Bill Classifying Abortions as
-                            Murder Introduced by GOP Lawmaker</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          Rep. Dan Eubanks also introduced a bill to ban
-                          employers from mandating COVID-19 vaccines for
-                          their staff.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/dude-in-suit3.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >GOP Rep. John Katko Says Capitol Riots 'Worse
-                            Than People Realized'</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          New York Rep. John Katko said classified briefings
-                          he had received about the January 6 unrest were
-                          "deeply troubling."
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/health-jobs.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Jon Ossoff, Raphael Warnock Certified by
-                            Georgia as Senate Runoff Winners</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          The two victories give Democrats majority control
-                          of the Senate, since Kamala Harris can break a tie
-                          vote.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/congresswoman.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Lauren Boebert Rejects Claims She Gave Rioters
-                            Capitol Tour</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          The Colorado congresswoman said that the claims
-                          made on CNN by Rep. Steve Cohen had endangered her
-                          family and her staff.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/trump-mic.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Trump Allies Await Pardons News as Clock Ticks
-                            Down on Presidential Powers</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          There is speculation about the president making
-                          final use of his clemency powers as his time in
-                          the White House draws to a close.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/capitol-riot-soldiers.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >National Guard Activated in 30 States Over
-                            Fears of Inauguration Violence</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          From California to Michigan, dozens of states will
-                          be bolstering security, including some declaring
-                          states of emergency and summoning the National
-                          Guard.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-left container-md morestoriescard">
-                  <div class="row card-body">
-                    <a href="#">
-                      <img
-                        src="./assets/captiol-riot-buffalo.jpg"
-                        alt="Error loading image"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="col-10">
-                      <a href="#">
-                        <h6 class="card-title">
-                          <strong
-                            >Christians in Crosshairs After Capitol
-                            Riot</strong
-                          >
-                        </h6>
-                      </a>
-                      <a href="#">
-                        <p class="card-text">
-                          Christians like Pastor Brian Gibson, now in
-                          hiding, are in the crosshairs after riots at the
-                          Capitol featured imagery of crosses and mentions
-                          of Jesus and God.
-                        </p>
-                      </a>
-                    </div>
-                  </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Biden's Biggest Challenge? 67,000 Migrants Stranded at
+                        U.S.-Mexico Border</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      The incoming president has not said what he plans to do
+                      with the tens of thousands of asylum-seekers living in
+                      limbo in crowded shelters and makeshift camps along the
+                      border.
+                    </p>
+                  </a>
                 </div>
               </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/deportationlow.webp"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Evangelicals, Police, Who Disliked Trump Immigration
+                        Policy May Back Reform</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      Religious conservatives and law-enforcement officers who
+                      were uncomfortable with family separations may be open to
+                      immigration reform.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-tv.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Donald Trump Pardons Israeli Spy Handler Who Paid for
+                        American Secrets</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      The president's flurry of pardons include former Israeli
+                      air force colonel Aviem Sella, who recruited the infamous
+                      spy Jonathan Pollard.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/people-outside.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Joe Biden's Schedule for His First Day As
+                        President</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      Joe Biden will be sworn in as the 46th president of the
+                      United States at noon on Wednesday. Kamala Harris will
+                      become the 49th vice president.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/lights.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >U.S. Cut Russia Consulate Phones Before Trump's Last
+                        Day, Moscow Claims</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      The Russian embassy in Washington, DC has sent a
+                      diplomatic note to the State Department after the phones
+                      at its New York consulate stopped working.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/clinic-escort.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Mississippi Bill Classifying Abortions as Murder
+                        Introduced by GOP Lawmaker</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      Rep. Dan Eubanks also introduced a bill to ban employers
+                      from mandating COVID-19 vaccines for their staff.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/dude-in-suit3.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >GOP Rep. John Katko Says Capitol Riots 'Worse Than
+                        People Realized'</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      New York Rep. John Katko said classified briefings he had
+                      received about the January 6 unrest were "deeply
+                      troubling."
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/health-jobs.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Jon Ossoff, Raphael Warnock Certified by Georgia as
+                        Senate Runoff Winners</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      The two victories give Democrats majority control of the
+                      Senate, since Kamala Harris can break a tie vote.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/congresswoman.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Lauren Boebert Rejects Claims She Gave Rioters Capitol
+                        Tour</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      The Colorado congresswoman said that the claims made on
+                      CNN by Rep. Steve Cohen had endangered her family and her
+                      staff.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-mic.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Trump Allies Await Pardons News as Clock Ticks Down on
+                        Presidential Powers</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      There is speculation about the president making final use
+                      of his clemency powers as his time in the White House
+                      draws to a close.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/capitol-riot-soldiers.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >National Guard Activated in 30 States Over Fears of
+                        Inauguration Violence</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      From California to Michigan, dozens of states will be
+                      bolstering security, including some declaring states of
+                      emergency and summoning the National Guard.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card text-left container-md morestoriescard">
+              <div class="row card-body">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/capitol-riot-buffalo.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >Christians in Crosshairs After Capitol Riot</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">
+                      Christians like Pastor Brian Gibson, now in hiding, are in
+                      the crosshairs after riots at the Capitol featured imagery
+                      of crosses and mentions of Jesus and God.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Latest news -->
-        <div class="col-md-12 p-0 order-6 order-md-5">
+        <div class="col-md-12 p-0 order-6 order-md-5 d-md-none d-lg-block">
           <h5 class="text-left grid-text">LATEST NEWS</h5>
           <div class="row">
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/cobrakai.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/cobrakai.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1522,8 +1559,8 @@
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      "Cobra Kai" Season 4 has been confirmed by
-                      Netflix, and production has been reported to be...
+                      "Cobra Kai" Season 4 has been confirmed by Netflix, and
+                      production has been reported to be...
                     </p>
                   </a>
                 </div>
@@ -1531,26 +1568,28 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/anons.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/anons.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >Fake Gen. Hyten Telegram Channel Spreads Qanon
-                        Slogans Before Inauguration</strong
+                        >Fake Gen. Hyten Telegram Channel Spreads Qanon Slogans
+                        Before Inauguration</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      Gen. Hyten, who is the vice chairman of the Joint
-                      Chiefs of Staff and the country's second...
+                      Gen. Hyten, who is the vice chairman of the Joint Chiefs
+                      of Staff and the country's second...
                     </p>
                   </a>
                 </div>
@@ -1558,27 +1597,28 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/trump-speech-hidden.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-speech-hidden.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >MyPillow Products Dropped Because of Poor Sales
-                        Not Politics, Stores Say</strong
+                        >MyPillow Products Dropped Because of Poor Sales Not
+                        Politics, Stores Say</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      MyPillow CEO Mike Lindell claimed several
-                      retailers were succumbing to pressure from
-                      campaigners...
+                      MyPillow CEO Mike Lindell claimed several retailers were
+                      succumbing to pressure from campaigners...
                     </p>
                   </a>
                 </div>
@@ -1586,26 +1626,28 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/trump-again.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-again.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >Trump's Pardon List Leaves Off Snowden, Assange
-                        and Winner</strong
+                        >Trump's Pardon List Leaves Off Snowden, Assange and
+                        Winner</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      Trump granted clemency to dozens of people in the
-                      final hours of his presidency.
+                      Trump granted clemency to dozens of people in the final
+                      hours of his presidency.
                     </p>
                   </a>
                 </div>
@@ -1613,27 +1655,27 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/csi.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/csi.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >'NCIS' Season 18 Reveals Why Gibbs Shot
-                        McGee</strong
+                        >'NCIS' Season 18 Reveals Why Gibbs Shot McGee</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      "NCIS" Season 18, Episode 5 on CBS finally came
-                      back to the opening of the season, which saw
-                      Gibbs...
+                      "NCIS" Season 18, Episode 5 on CBS finally came back to
+                      the opening of the season, which saw Gibbs...
                     </p>
                   </a>
                 </div>
@@ -1641,27 +1683,28 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/rapper3.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/rapper3.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >Kodak Black Pardoned by Trump Two Months After
-                        $1 Million Charity Pledge</strong
+                        >Kodak Black Pardoned by Trump Two Months After $1
+                        Million Charity Pledge</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      The rapper is serving a four-year sentence in
-                      federal prison after pleading guilty to possession
-                      of...
+                      The rapper is serving a four-year sentence in federal
+                      prison after pleading guilty to possession of...
                     </p>
                   </a>
                 </div>
@@ -1669,26 +1712,28 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/court.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/court.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >Trump Ally Gaetz Wants More GOP Leaders With
-                        Outgoing President's 'Spirit'</strong
+                        >Trump Ally Gaetz Wants More GOP Leaders With Outgoing
+                        President's 'Spirit'</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      The Republican congressman spoke of looking to
-                      "continue to harness the energy of the Trump...
+                      The Republican congressman spoke of looking to "continue
+                      to harness the energy of the Trump...
                     </p>
                   </a>
                 </div>
@@ -1696,27 +1741,28 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/covid.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/covid.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
-                        >These Places Are Running Out of COVID Vaccines
-                        in the U.S.</strong
+                        >These Places Are Running Out of COVID Vaccines in the
+                        U.S.</strong
                       >
                     </h6>
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      New York City, the country's most populous city,
-                      was reported to have enough vaccines to
-                      administer...
+                      New York City, the country's most populous city, was
+                      reported to have enough vaccines to administer...
                     </p>
                   </a>
                 </div>
@@ -1724,14 +1770,16 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/princess.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/princess.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1742,8 +1790,8 @@
                   </a>
                   <a href="#">
                     <p class="card-text">
-                      The Duchess of Sussex's aide opened doors for the
-                      authors of a biography that accused Prince...
+                      The Duchess of Sussex's aide opened doors for the authors
+                      of a biography that accused Prince...
                     </p>
                   </a>
                 </div>
@@ -1771,21 +1819,24 @@
           <div class="card-body">
             <a href="#">
               <h4 class="card-title text-black font-weight-bold">
-                Hungary: From Manufacturing Hub to Innovation and RandD;
-                Center
+                Hungary: From Manufacturing Hub to Innovation and RandD; Center
               </h4>
             </a>
             <p class="card-text">
-              With its pro-business agenda and open-border policy for
-              investors, the Central European nation is hoping to bounce
-              back from the COVID-19 crisis, while making greater
-              strides toward innovation, research and development.
+              With its pro-business agenda and open-border policy for investors,
+              the Central European nation is hoping to bounce back from the
+              COVID-19 crisis, while making greater strides toward innovation,
+              research and development.
             </p>
           </div>
         </div>
         <div class="card text-left sponsoredinsight">
           <div class="cardImgCont">
-            <img src="./assets/miami.jpg" alt="Error loading image" class="card-img-top" />
+            <img
+              src="./assets/miami.jpg"
+              alt="Error loading image"
+              class="card-img-top"
+            />
             <div class="card-img-overlay">
               <p class="card-text font-weight-bolder">
                 <a href="#"> SPONSORED INSIGHT </a>
@@ -1795,13 +1846,12 @@
           <div class="card-body">
             <a href="#">
               <h4 class="card-title text-black font-weight-bold">
-                Panama - Central America's Leading Investment
-                Destination
+                Panama - Central America's Leading Investment Destination
               </h4>
             </a>
             <p class="card-text">
-              Panama is expected to rebound strongly in 2021, with
-              growth forecasted between 4% and 7%.
+              Panama is expected to rebound strongly in 2021, with growth
+              forecasted between 4% and 7%.
             </p>
           </div>
         </div>
@@ -1821,15 +1871,14 @@
           <div class="card-body">
             <a href="#">
               <h4 class="card-title text-black font-weight-bold">
-                Why are Private Schools the Best Option for Your Child’s
-                Future?
+                Why are Private Schools the Best Option for Your Child’s Future?
               </h4>
             </a>
             <p class="card-text">
-              If academic results, average class size, teacher
-              proficiency, pupil diversity and religious orthodoxy of
-              your child’s school are things that are important to you,
-              you should be looking at a private school.
+              If academic results, average class size, teacher proficiency,
+              pupil diversity and religious orthodoxy of your child’s school are
+              things that are important to you, you should be looking at a
+              private school.
             </p>
           </div>
         </div>
@@ -1853,40 +1902,403 @@
               </h4>
             </a>
             <p class="card-text">
-              In partnership with Statista, we established a ranking
-              providing information and insights to help you during this
-              challenging time.
+              In partnership with Statista, we established a ranking providing
+              information and insights to help you during this challenging time.
             </p>
           </div>
         </div>
       </div>
-
     </div>
 
+
+    <!-- Column 3 on Tablet size -->
+    <div class="row container-fluid d-flex d-none d-md-block d-lg-none mx-auto">
+      <!-- The debate -->
+      <div class="col-md-12 container p-0 order-3 order-md-1">
+        <div class="row text-left p-0">
+          <h6 class="container-fluid">THE DEBATE</h6>
+          <div class="col">
+            <hr class="debateBorder" />
+            <div class="card text-left">
+              <div class="row card-body">
+                <a href="#">
+                  <img
+                    src="./assets/1.png"
+                    alt="Error loading image"
+                    class="img-fluid"
+                  />
+                </a>
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong>Media Have Every Right to Cancel Trump</strong>
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">BY <strong>FROMA HARROP</strong></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="vsline position-relative">
+              <div class="vscircle position-relative text-center">
+                VS
+              </div>
+            </div>
+            <div class="card text-left">
+              <div class="row card-body">
+                <div class="col-9">
+                  <a href="#">
+                    <h6 class="card-title">
+                      <strong
+                        >After Parler Ban, Rein in Big Tech Now or Cease Being
+                        Free Citizens</strong
+                      >
+                    </h6>
+                  </a>
+                  <a href="#">
+                    <p class="card-text">BY <strong>RACHEL BOVARD</strong></p>
+                  </a>
+                </div>
+                <a href="#">
+                  <img
+                    src="./assets/2.png"
+                    alt="Error loading image"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr class="debateBorder" />
+        <h5 class="text-left grid-text">OPINION</h5>
+        <div class="row container">
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/3.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong>U.S. Supply Chain: Stop Driving Blind</strong>
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY FRANK CILLUFFO AND STEWART BAKER</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/4.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong
+                      >After Violence at the Capitol, Congress Must Ensure
+                      Election Integrity</strong
+                    >
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY RICK SCOTT</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/5.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong
+                      >Despite January 6, Trump Leaves a Legacy of Trust with
+                      Voters</strong
+                    >
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY NIGEL FARAGE</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/6.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong>Narcissism and Nihilism on Capitol Hill</strong>
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY PHILIP JEFFERY</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/7.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong>Exit Trump, Tragic American Hero</strong>
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY BRUCE ABRAMSON</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/8.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong
+                      >As the 46th President Takes Office, Let's Discuss the
+                      47th</strong
+                    >
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY MARK DAVIS</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-left">
+            <div class="row card-body">
+              <a href="#">
+                <img
+                  src="./assets/9.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-9">
+                <a href="#">
+                  <h6 class="card-title">
+                    <strong
+                      >Is the European Union Combating or Whitewashing
+                      Anti-Semitism?</strong
+                    >
+                  </h6>
+                </a>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY ABRAHAM COOPER AND MANFRED GERSTENFELD</strong>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPONSORED INSIGHT 3RD COLUMN -->
+      <div
+        class="col-md-12 order-4 p-0 order-md-2 d-none d-md-block sticky-top"
+      >
+        <div class="card text-left sponsoredinsight">
+          <div class="cardImgCont">
+            <img
+              src="./assets/bridge.jpg"
+              alt="Error loading image"
+              class="card-img-top"
+            />
+            <div class="card-img-overlay">
+              <p class="card-text font-weight-bolder">
+                <a href="#"> SPONSORED INSIGHT </a>
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#">
+              <h4 class="card-title text-black font-weight-bold">
+                Hungary: From Manufacturing Hub to Innovation and RandD; Center
+              </h4>
+            </a>
+            <p class="card-text">
+              With its pro-business agenda and open-border policy for investors,
+              the Central European nation is hoping to bounce back from the
+              COVID-19 crisis, while making greater strides toward innovation,
+              research and development.
+            </p>
+          </div>
+        </div>
+        <div class="card text-left sponsoredinsight">
+          <div class="cardImgCont">
+            <img
+              src="./assets/miami.jpg"
+              alt="Error loading image"
+              class="card-img-top"
+            />
+            <div class="card-img-overlay">
+              <p class="card-text font-weight-bolder">
+                <a href="#"> SPONSORED INSIGHT </a>
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#">
+              <h4 class="card-title text-black font-weight-bold">
+                Panama - Central America's Leading Investment Destination
+              </h4>
+            </a>
+            <p class="card-text">
+              Panama is expected to rebound strongly in 2021, with growth
+              forecasted between 4% and 7%.
+            </p>
+          </div>
+        </div>
+        <div class="card text-left sponsoredinsight">
+          <div class="cardImgCont">
+            <img
+              src="./assets/students.jpg"
+              alt="Error loading image"
+              class="card-img-top"
+            />
+            <div class="card-img-overlay">
+              <p class="card-text font-weight-bolder">
+                <a href="#"> SPONSORED INSIGHT </a>
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#">
+              <h4 class="card-title text-black font-weight-bold">
+                Why are Private Schools the Best Option for Your Child’s Future?
+              </h4>
+            </a>
+            <p class="card-text">
+              If academic results, average class size, teacher proficiency,
+              pupil diversity and religious orthodoxy of your child’s school are
+              things that are important to you, you should be looking at a
+              private school.
+            </p>
+          </div>
+        </div>
+        <div class="card text-left sponsoredinsight">
+          <div class="cardImgCont">
+            <img
+              src="./assets/oldmangraph.png"
+              alt="Error loading image"
+              class="card-img-top"
+            />
+            <div class="card-img-overlay">
+              <p class="card-text font-weight-bolder">
+                <a href="#"> RANKINGS </a>
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#">
+              <h4 class="card-title text-black font-weight-bold">
+                America's Best Nursing Homes 2021
+              </h4>
+            </a>
+            <p class="card-text">
+              In partnership with Statista, we established a ranking providing
+              information and insights to help you during this challenging time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Magazine Grid -->
 
   <!-- Title -->
     <div class="col-12 text-center d-flex justify-content-center black my-4">
-      <h4 class="font-weight-bold border-bottom w-75 py-3"><span><img class="img-fluid d-inline-flex mr-2" src="./assets/logo-N.png" alt="logo" height="35" width="35"></span>IN THE MAGAZINE</h4>
+      <h4 class="font-weight-bold">
+        <span
+          ><img
+            class="img-fluid d-inline-flex mr-2"
+            src="./assets/logo-N.png"
+            alt="logo"
+            height="35"
+            width="35" /></span
+        >IN THE MAGAZINE
+      </h4>
     </div>
 
-    <!-- Section -->
-    <div id="magSection" class="text-center container-fluid black">
-
+    <div id="magSection" class="text-center container-fluidblack">
       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4">
-        
         <!-- Card 1 -->
         <div class="col d-flex justify-content-center mb-3">
           <div class="card col-12">
             <div class="magImgCont">
-              <img src="./assets/cover-january-high.jpg" class="card-img-top img-fluid" alt="...">
-              <a class="text-decoration-none" href="#"><h6 class="font-weight-bold black featuresLink my-2">SEE ALL FEATURES<span><i class="fas fa-chevron-right black"></i></span></h6></a>    
+              <img
+                src="./assets/cover-january-high.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <a class="text-decoration-none" href="#"
+                ><h6 class="font-weight-bold black featuresLink my-2">
+                  SEE ALL FEATURES<span
+                    ><i class="fas fa-chevron-right black"></i
+                  ></span></h6
+              ></a>
               <div class="card-img-overlay">
-                <p class="magOverlay font-weight-bolder"><a href="#">
-                  JANUARY 22 ISSUE
-                </a>
-              </p>
+                <p class="magOverlay font-weight-bolder">
+                  <a href="#"> JANUARY 22 ISSUE </a>
+                </p>
               </div>
             </div>
           </div>
@@ -1895,13 +2307,25 @@
         <!-- Card 2 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/capitol-riot-5.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/capitol-riot-5.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">COVER &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">NEWS</span></a>
-              
+                <span class="magBtn1">COVER &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">NEWS</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">FBI, DHS, White House Advisers Foresaw Possible Riots, Looked the Other Way</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  FBI, DHS, White House Advisers Foresaw Possible Riots, Looked
+                  the Other Way
+                </h5></a
+              >
             </div>
           </div>
         </div>
@@ -1909,28 +2333,50 @@
         <!-- Card 3 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/capitol-riot-selfie.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/capitol-riot-selfie.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">FEATURES &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">OPINION</span></a>
-              
+                <span class="magBtn1">FEATURES &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">OPINION</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">On His Way Out, Trump Trashes America—and the GOP</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  On His Way Out, Trump Trashes America—and the GOP
+                </h5></a
+              >
             </div>
           </div>
         </div>
 
-
         <!-- Card 4 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/capitol-riot-6.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/capitol-riot-6.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">FEATURES &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">WORLD</span></a>
-              
+                <span class="magBtn1">FEATURES &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">WORLD</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">Nations Targeted by US for Regime Change Mock Mob Attack on Capitol</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  Nations Targeted by US for Regime Change Mock Mob Attack on
+                  Capitol
+                </h5></a
+              >
             </div>
           </div>
         </div>
@@ -1938,13 +2384,24 @@
         <!-- Card 5 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/capitol-riot-7.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/capitol-riot-7.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">FEATURES &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">CULTURE</span></a>
-              
+                <span class="magBtn1">FEATURES &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">CULTURE</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">War on Democracy: the Capitol Riot, in Pictures</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  War on Democracy: the Capitol Riot, in Pictures
+                </h5></a
+              >
             </div>
           </div>
         </div>
@@ -1952,13 +2409,25 @@
         <!-- Card 6 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/weapos2.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/weapos2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">PERISCOPE &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">CULTURE</span></a>
-              
+                <span class="magBtn1">PERISCOPE &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">CULTURE</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">10 Years After the Arab Spring, Uncertainty Dominates the Region</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  10 Years After the Arab Spring, Uncertainty Dominates the
+                  Region
+                </h5></a
+              >
             </div>
           </div>
         </div>
@@ -1966,13 +2435,24 @@
         <!-- Card 7 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/cook.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/cook.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">PERISCOPE &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">CULTURE</span></a>
-              
+                <span class="magBtn1">PERISCOPE &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">CULTURE</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">'I'm 11, I Started a Cake Baking Business During The Pandemic'</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  'I'm 11, I Started a Cake Baking Business During The Pandemic'
+                </h5></a
+              >
             </div>
           </div>
         </div>
@@ -1980,13 +2460,24 @@
         <!-- Card 8 -->
         <div class="col d-flex justify-content-center">
           <div class="card col-12">
-            <img src="./assets/blackandwhite.jpg" class="card-img-top img-fluid" alt="...">
+            <img
+              src="./assets/blackandwhite.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card mb-3 mt-3 text-left">
               <div class="card-title magCard font-weight-bold">
-                <span class="magBtn1">DOWNTIME &nbsp;</span>&nbsp;<a href="#" class="text-decoration-none"><span class="magBtn2">CULTURE</span></a>
-              
+                <span class="magBtn1">DOWNTIME &nbsp;</span>&nbsp;<a
+                  href="#"
+                  class="text-decoration-none"
+                  ><span class="magBtn2">CULTURE</span></a
+                >
               </div>
-              <a href="#" class="text-decoration-none"><h5 class="card-text font-weight-bolder">Rhye Puts Down Roots</h5></a>
+              <a href="#" class="text-decoration-none"
+                ><h5 class="card-text font-weight-bolder">
+                  Rhye Puts Down Roots
+                </h5></a
+              >
             </div>
           </div>
         </div>
@@ -3242,7 +3733,7 @@
 
 
       <!-- Footer -->
-      <footer id="footer" class="container p-3">
+      <footer class="container p-3 d-none d-sm-block">
         <div class="upper-footer justify-content-between d-flex">
           <div class="footer-links d-flex justify-content-start">
             <a href="#" title="Title"
@@ -3269,19 +3760,29 @@
           </div>
           <div class="footer-social-media d-flex">
             <div class="footer-social-media mt-3 d-flex">
-              <a href="#" title="Title"><i class="fab fa-facebook-square icons ml-1"></i></a>
-              <a href="#" title="Title"><i class="fab fa-twitter icons ml-1"></i></a>
-              <a href="#" title="Title"><i class="fab fa-youtube icons ml-1"></i></a>
-              <a href="#" title="Title"><i class="fab fa-instagram icons ml-1"></i></a>
-              <a href="#" title="Title"><i class="fab fa-tumblr icons ml-1"></i></a>
-              <a href="#" title="Title"><i class="fab fa-linkedin icons ml-1"></i></a>
+              <a href="#" title="Title"
+                ><i class="fab fa-facebook-square icons ml-1"></i
+              ></a>
+              <a href="#" title="Title"
+                ><i class="fab fa-twitter icons ml-1"></i
+              ></a>
+              <a href="#" title="Title"
+                ><i class="fab fa-youtube icons ml-1"></i
+              ></a>
+              <a href="#" title="Title"
+                ><i class="fab fa-instagram icons ml-1"></i
+              ></a>
+              <a href="#" title="Title"
+                ><i class="fab fa-tumblr icons ml-1"></i
+              ></a>
+              <a href="#" title="Title"
+                ><i class="fab fa-linkedin icons ml-1"></i
+              ></a>
             </div>
           </div>
         </div>
         <hr class="my-0" />
-        <ul
-          class="nav text-left justify-content-start flex-column flex-sm-row"
-        >
+        <ul class="nav text-left justify-content-start flex-column flex-sm-row">
           <li class="nav-item">
             <a href="" class="nav-link middleNavLinks">Editions</a>
           </li>
@@ -3301,9 +3802,117 @@
             <a href="" class="nav-link footerNavLinks">Romania</a>
           </li>
         </ul>
-        <ul
-          class="nav text-left justify-content-start flex-column flex-sm-row"
-        >
+        <ul class="nav text-left justify-content-start flex-column flex-sm-row">
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Corrections</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Editorial guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Advertise</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Copyright</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Terms & Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Cookie Policy</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Terms of Sale</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Archive</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Announcements</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">GDPR Privacy Settings</a>
+          </li>
+        </ul>
+      </footer>
+
+      <!-- Footer mobile -->
+      <footer class="container p-3 d-block d-sm-none">
+        <div class="upper-footer row ml-1">
+          <a href="#" title="Title"
+            ><svg
+              id="footerTitle2"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 395.6 60"
+              style="enable-background: new 0 0 395.6 60"
+              xml:space="preserve"
+              width="236"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <p class="mt-2">@ 2021 NEWSWEEK DIGITAL LLC</p>
+          <div class="footer-social-media d-flex">
+            <a href="#" title="Title"
+              ><i class="fab fa-facebook-square icons ml-1"></i
+            ></a>
+            <a href="#" title="Title"
+              ><i class="fab fa-twitter icons ml-1"></i
+            ></a>
+            <a href="#" title="Title"
+              ><i class="fab fa-youtube icons ml-1"></i
+            ></a>
+            <a href="#" title="Title"
+              ><i class="fab fa-instagram icons ml-1"></i
+            ></a>
+            <a href="#" title="Title"
+              ><i class="fab fa-tumblr icons ml-1"></i
+            ></a>
+            <a href="#" title="Title"
+              ><i class="fab fa-linkedin icons ml-1"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-0" />
+        <ul class="nav text-left justify-content-start row">
+          <li class="nav-item">
+            <a href="" class="nav-link middleNavLinks">Editions</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">U.S Edition</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">日本</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Pakistan</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Polska</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link footerNavLinks">Romania</a>
+          </li>
+        </ul>
+        <ul class="nav text-left justify-content-start row">
           <li class="nav-item">
             <a href="" class="nav-link footerNavLinks">About us</a>
           </li>
