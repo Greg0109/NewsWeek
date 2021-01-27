@@ -2,104 +2,106 @@ $font-main: roboto, sans-serif;
 $font-secondary: arial, helvetica, sans-serif;
 $icons: 27px;
 
-
 $theme-colors: (
-    "primary": red,
-    "secondary": #ccc
+  "primary": red,
+  "secondary": #ccc
 );
 
 body {
-    color: grey;
+  color: grey;
 }
 
 .icons {
-    font-size: $icons;
+  font-size: $icons;
 }
 
 .navbar {
-    background-color: red;
-    * {
-        color: white;
-    }
-    img {
-        width: 27%;
-    }
+  background-color: red;
+
+  * {
+    color: white;
+  }
+
+  img {
+    width: 27%;
+  }
 }
 
 .btn-warning {
-    border-radius: 16px;
-    color: black;
+  border-radius: 16px;
+  color: black;
 }
 
 footer {
-    position: relative;
-    bottom: 0;
+  position: relative;
+  bottom: 0;
 }
 
 #footerTitle {
-    fill: red;
-    height: 100%;
-    width: 100%;
+  fill: red;
+  height: 100%;
+  width: 100%;
 }
 
 .logo {
-    fill: white;
-    width: 100%;
+  fill: white;
+  width: 100%;
 }
 
 .subscribebutton {
-    font-weight: bold;
-    color: black;
-    border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 20px;
 }
 
 .middleNavLinks,
 .footerNavLinks {
-    color: #000;
-    font-weight: bolder;
+  color: #000;
+  font-weight: bolder;
 }
 
 .footerNavLinks {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .middleNavLinks:hover,
 .footerNavLinks:hover {
-    color: red;
+  color: red;
 }
 
 .lowerLinks {
-    color: #666;
+  color: #666;
 }
 
 #lowerLinks1 {
-    color: black;
+  color: black;
 }
 
 .footer-links {
-    a {
-        width: 40%;
-    }
+  a {
+    width: 40%;
+  }
 }
 
 i {
-    color: grey;
+  color: grey;
 }
 
 .nav-link {
-    border-right: 1px  rgba(153, 150, 150, 0.301) solid;
+  border-right: 1px  rgba(153, 150, 150, 0.301) solid;
 }
 
 #newsTitle {
-    font-family: $font-main;
-    fill: white;
+  font-family: $font-main;
+  fill: white;
 }
+
 #newsTitle2 {
-    font-family: $font-main;
-    fill: white;
-    height: 100px;
-    width: 150px;
-    padding: 0;
+  font-family: $font-main;
+  fill: white;
+  height: 100px;
+  width: 150px;
+  padding: 0;
 }
 
 // Cards
@@ -107,73 +109,74 @@ i {
 .card-title,
 .card-text,
 .black {
-    color: black;
+  color: black;
 }
 
 .cardImgCont {
-    position: relative;
+  position: relative;
 }
 
 .magImgCont {
-    position: relative;
+  position: relative;
 }
 
 .magOverlay,
 .magOverlay > a {
-    position: absolute;
-    padding: 6px 15px 6px 15px;
-    bottom: 0;
-    left: 0;
-    color: red;
-    font-size: 14px;
-    background: rgba(300, 300, 300, 0.8);
-    text-decoration: none;
+  position: absolute;
+  padding: 6px 15px 6px 15px;
+  bottom: 0;
+  left: 0;
+  color: red;
+  font-size: 14px;
+  background: rgba(300, 300, 300, 0.8);
+  text-decoration: none;
 }
 
 .card-img-overlay > .card-text,
 .card-img-overlay > .card-text > a {
-    position: absolute;
-    padding: 6px 15px 6px 15px;
-    bottom: 0;
-    left: 0;
-    color: red;
-    font-size: 18px;
-    background: rgba(300, 300, 300, 0.8);
-    text-decoration: none;
+  position: absolute;
+  padding: 6px 15px 6px 15px;
+  bottom: 0;
+  left: 0;
+  color: red;
+  font-size: 18px;
+  background: rgba(300, 300, 300, 0.8);
+  text-decoration: none;
 }
 
 .card {
-    border: 0px transparent solid;
+  border: 0 transparent solid;
 }
 
 .debateBorder {
-    border-top: #ddd 5px solid;
+  border-top: #ddd 5px solid;
 }
 
 .vsborder {
-    border-top: #ddd 5px double;
+  border-top: #ddd 5px double;
 }
 
 .grid-text {
-    color: grey;
-    font-size: 16px;
-    font-weight: bolder;
+  color: grey;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 // Magazine
 
 .magBtn1 {
-    background: red;
-    color: white;
+  background: red;
+  color: white;
 }
+
 .magBtn2 {
-    color: red;
+  color: red;
 }
 
 .magCard {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .featuresLink:hover {
-    background: #eee;
+  background: #eee;
 }
