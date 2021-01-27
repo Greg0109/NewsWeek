@@ -125,6 +125,9 @@ i {
 .black {
   color: black;
 }
+.red {
+  color: red;
+}
 
 .card-text-opinion {
   font-size: 12px;
@@ -209,6 +212,21 @@ i {
 
 .featuresLink:hover {
   background: #eee;
+}
+
+.subNewsBtn {
+  background: red;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.subNewsBtn:hover {
+  background: red;
+}
+
+.subNewsImg {
+  top: 5%;
+  left: 25%;
 }
 
 .mobilebar {
