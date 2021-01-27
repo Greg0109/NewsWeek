@@ -3,7 +3,7 @@
 > This is the Project 2 in the Microverse course
 
 ### View in browser
-![Live](https://greg0109.github.io/NewsWeek/)
+[Live](https://greg0109.github.io/NewsWeek/)
 
 ### Screenshot
 ![Screenshot](assets/NewsWeek.png)
