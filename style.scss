@@ -11,6 +11,11 @@ body {
   color: grey;
 }
 
+.mainbody {
+    max-width: 1310px;
+    overflow-x: hidden;
+}
+
 .icons {
   font-size: $icons;
 }
@@ -54,6 +59,18 @@ footer {
   border-radius: 20px;
 }
 
+.subscribebutton2 {
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    font-size: 10px;
+  }
+
+.togglerbutton {
+    width: 5px;
+    height: auto;
+}
+
 .middleNavLinks,
 .footerNavLinks {
   color: #000;
@@ -92,16 +109,13 @@ i {
 }
 
 #newsTitle {
-  font-family: $font-main;
-  fill: white;
+  width: 900px;
 }
 
 #newsTitle2 {
-  font-family: $font-main;
-  fill: white;
-  height: 100px;
+  height: auto;
   width: 150px;
-  padding: 0;
+  padding-left: 10;
 }
 
 // Cards
@@ -110,6 +124,10 @@ i {
 .card-text,
 .black {
   color: black;
+}
+
+.card-text-opinion {
+    font-size: 12px;
 }
 
 .cardImgCont {
@@ -194,7 +212,5 @@ i {
 }
 
 .mobilebar {
-    * {
-        float: left;
-    }
+    padding-bottom: -5px;
 }

@@ -29,33 +29,35 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="mainbody mx-auto w-100">
     <!-- Navbar Mobile -->
-    <header class="d-md-none fixed-top">
-      <nav class="navbar navbar-dark d-flex w-100">
-        <div class="navbar-nav mobilebar">
-          <div class="logo mr-auto">
-            <img
-              class="d-md-none img"
-              src="./assets/mainlogo.png"
-              alt="logo"
-              height="30"
-              width="70"
-            />
-            <div class="person ml-auto">
-              <p>
-                <i class="fas fa-user icons text-white mr-2 m-auto"></i>
-              </p>
-            </div>
-            <div class="ml-auto">
-              <p
-                class="navbar-nav btn btn-warning text-center subscribebutton2 h-auto px-3"
-              >
-                SUBSCRIBE
-              </p>
-            </div>
-            <div class="col-1 ml-auto">
-              <button
+    <nav class="d-md-none sticky-top navbar navbar-dark d-flex">
+      <div class="navbar-nav mobilebar d-flex">
+        <div class="logo mr-auto d-flex row">
+          <div class="mx-auto col-6">
+            <a class="navbar-brand mx-auto" href="#">
+              <img
+                  class="img-fluid"
+                  id="newsTitle2"
+                  src="./assets/mainlogo.png"
+                  alt="logo"
+                />
+            </a>
+          </div>
+          <div class="navbar-collapse justify-content-end col-6">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="nav-link h-auto text-white" href="#"><i class="fa fa-address-card" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <span
+                  class="navbar-nav btn btn-warning font-weight-bolder text-center subscribebutton2 h-auto px-2"
+                  >SUBSCRIBE</span
+                >
+              </li>
+              <li class="list-inline-item">
+                <div class="togglerbutton">
+                  <button
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -64,70 +66,72 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-            </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">U.S.</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">World</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Business</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Tech & Science</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Culture</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Newsgeek</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Sports</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Health</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">The Debate</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Experts</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">Vantage</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">JOE BIDEN</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">DONALD TRUMP</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">CORONAVIRUS</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">STIMULUS PACKAGE</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">VACCINE</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" class="nav-link p-2 dropNavLinks">CAPITOL RIOTS</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">U.S.</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">World</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Business</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Tech & Science</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Culture</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Newsgeek</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Sports</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Health</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">The Debate</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Experts</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">Vantage</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">JOE BIDEN</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">DONALD TRUMP</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">CORONAVIRUS</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">STIMULUS PACKAGE</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">VACCINE</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="#" class="nav-link p-2 dropNavLinks">CAPITOL RIOTS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- NavBar 1-->
-    <header class="d-none d-md-block mt-5 border-red sticky-top pb-3">
+    <header class="d-none d-md-block mt-5 border-red sticky-top pb-3 mt-auto">
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0">
           <ul class="navbar-nav mr-auto">
@@ -136,17 +140,14 @@
             </li>
           </ul>
         </div>
-        <div class="mx-auto order-0 d-inline-flex">
+        <div class="mx-auto">
           <a class="navbar-brand mx-auto" href="#">
-            <div class="navbar-nav mr-5">
-              <img
-                class="d-none d-md-flex text-white img"
-                width="500"
+            <img
+                class="img-fluid"
                 id="newsTitle"
                 src="./assets/mainlogo.png"
                 alt="logo"
               />
-            </div>
           </a>
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -541,7 +542,7 @@
         class="row container-fluid d-flex col-md-3 order-3 order-md-3 d-md-none d-lg-block"
       >
         <!-- The debate -->
-        <div class="col-md-12 container p-0 order-3 order-md-1">
+        <div class="col-md-12 container p-0 order-3 order-md-1 d-none d-sm-none d-lg-block">
           <div class="row text-left p-0">
             <h6 class="container-fluid">THE DEBATE</h6>
             <div class="col">
@@ -599,178 +600,165 @@
           <br />
           <hr class="debateBorder" />
           <h5 class="text-left grid-text">OPINION</h5>
-          <div class="row container">
-            <div class="card text-left">
-              <div class="row card-body">
+          <div class="row container-fluid ">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/3.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/3.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong>U.S. Supply Chain: Stop Driving Blind</strong>
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong>U.S. Supply Chain: Stop Driving Blind</strong>
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY FRANK CILLUFFO AND STEWART BAKER</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY FRANK CILLUFFO AND STEWART BAKER</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/4.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/4.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong
+                      >After Violence at the Capitol, Congress Must Ensure
+                      Election Integrity</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >After Violence at the Capitol, Congress Must Ensure
-                        Election Integrity</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY RICK SCOTT</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY RICK SCOTT</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/5.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/5.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong
+                      >Despite January 6, Trump Leaves a Legacy of Trust with Voters</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >Despite January 6, Trump Leaves a Legacy of Trust with
-                        Voters</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY NIGEL FARAGE</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY NIGEL FARAGE</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/6.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/6.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong
+                      >Narcissism and Nihilism on Capitol Hill</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong>Narcissism and Nihilism on Capitol Hill</strong>
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY PHILIP JEFFERY</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY PHILIP JEFFERY</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/7.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/7.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong
+                      >Exit Trump, Tragic American Hero</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong>Exit Trump, Tragic American Hero</strong>
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY BRUCE ABRAMSON</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY BRUCE ABRAMSON</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/8.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/8.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong
+                      >As the 46th President Takes Office, Let's Discuss the 47th</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >As the 46th President Takes Office, Let's Discuss the
-                        47th</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY MARK DAVIS</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY MARK DAVIS</strong>
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="card text-left">
-              <div class="row card-body">
+            <div class="row text-left mb-4">
+              <a href="#" class="col-4">
+                <img
+                  src="./assets/9.png"
+                  alt="Error loading image"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="col-8">
                 <a href="#">
-                  <img
-                    src="./assets/9.png"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
+                  <h6 class="card-title">
+                    <strong
+                      >Is the European Union Combating or Whitewashing Anti-Semitism?</strong
+                    >
+                  </h6>
                 </a>
-                <div class="col-9">
-                  <a href="#">
-                    <h6 class="card-title">
-                      <strong
-                        >Is the European Union Combating or Whitewashing
-                        Anti-Semitism?</strong
-                      >
-                    </h6>
-                  </a>
-                  <a href="#">
-                    <p class="card-text card-text-opinion">
-                      <strong>BY ABRAHAM COOPER AND MANFRED GERSTENFELD</strong>
-                    </p>
-                  </a>
-                </div>
+                <a href="#">
+                  <p class="card-text card-text-opinion">
+                    <strong>BY ABRAHAM COOPER AND MANFRED GERSTENFELD</strong>
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -1185,14 +1173,17 @@
           <div class="row">
             <div class="card container-md text-left morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/wall.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/wall.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1214,14 +1205,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/deportationlow.webp"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/deportationlow.webp"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1242,14 +1236,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/trump-tv.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-tv.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1270,14 +1267,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/people-outside.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/people-outside.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1298,14 +1298,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/lights.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/lights.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1326,14 +1329,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/clinic-escort.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/clinic-escort.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1353,14 +1359,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/dude-in-suit3.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/dude-in-suit3.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1381,14 +1390,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/health-jobs.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/health-jobs.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1408,14 +1420,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/congresswoman.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/congresswoman.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1436,14 +1451,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/trump-mic.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-mic.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1464,14 +1482,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/capitol-riot-soldiers.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/capitol-riot-soldiers.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1492,14 +1513,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/captiol-riot-buffalo.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/capitol-riot-buffalo.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1526,14 +1550,17 @@
           <div class="row">
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/cobrakai.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/cobrakai.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1553,14 +1580,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/anons.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/anons.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1580,14 +1610,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/trump-speech-hidden.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-speech-hidden.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1607,14 +1640,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/trump-again.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/trump-again.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1634,14 +1670,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/csi.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/csi.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1660,14 +1699,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/rapper3.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/rapper3.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1687,14 +1729,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/court.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/court.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1714,14 +1759,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/covid.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/covid.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1741,14 +1789,17 @@
             </div>
             <div class="card text-left container-md morestoriescard">
               <div class="row card-body">
-                <a href="#">
-                  <img
-                    src="./assets/princess.jpg"
-                    alt="Error loading image"
-                    class="img-fluid"
-                  />
-                </a>
-                <div class="col-7 col-sm-9 col-md-15 col-lg-10">
+                <div class="morestoriesimage col-3">
+                  <a href="#">
+                    <img
+                      src="./assets/princess.jpg"
+                      alt="Error loading image"
+                      class="img-fluid"
+                      width="100%"
+                    />
+                  </a>
+                </div>
+                <div class="col-9">
                   <a href="#">
                     <h6 class="card-title">
                       <strong
@@ -1879,8 +1930,9 @@
       </div>
     </div>
 
+
     <!-- Column 3 on Tablet size -->
-    <div class="row container-fluid d-flex d-none d-md-block d-lg-none">
+    <div class="row container-fluid d-flex d-none d-md-block d-lg-none mx-auto">
       <!-- The debate -->
       <div class="col-md-12 container p-0 order-3 order-md-1">
         <div class="row text-left p-0">
