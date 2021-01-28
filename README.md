@@ -1,4 +1,4 @@
-# Project 3 - NewsWeek Copy
+# Project 3 - NewsWeek Clone
 
 > This is the Project 2 in the Microverse course
 
@@ -28,7 +28,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Greg0109/NewsWeek/issues.
+Feel free to check the [issues page](https://github.com/Greg0109/NewsWeek/issues.)
 
 ## 📝 License
 
