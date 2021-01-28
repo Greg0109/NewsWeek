@@ -58,7 +58,7 @@ Use a local broswer to deploy the project for testing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Greg0109/NewsWeek/issues.)
+Feel free to check the [issues page](https://github.com/Greg0109/NewsWeek/issues)
 
 ## 📝 License
 
