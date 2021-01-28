@@ -26,12 +26,7 @@ body {
   }
 }
 
-.btn-warning {
-  border-radius: 16px;
-}
-
 footer {
-  position: relative;
   bottom: 0;
 }
 
@@ -42,15 +37,6 @@ footer {
   width: 100%;
 }
 
-.logo {
-  fill: white;
-  width: 100%;
-}
-
-.subscribebutton {
-  border-radius: 20px;
-}
-
 .subscribebutton2 {
   border-radius: 20px;
   font-size: 10px;
@@ -58,7 +44,6 @@ footer {
 
 .togglerbutton {
   width: 5px;
-  height: auto;
 }
 
 .footerNavLinks {
@@ -89,7 +74,6 @@ footer {
 }
 
 #newsTitle2 {
-  height: auto;
   width: 150px;
 }
 
@@ -103,25 +87,6 @@ footer {
 
 .card-text-opinion {
   font-size: 12px;
-}
-
-.cardImgCont {
-  position: relative;
-}
-
-.magImgCont {
-  position: relative;
-}
-
-.magOverlay,
-.magOverlay > a {
-  position: absolute;
-  padding: 6px 15px 6px 15px;
-  bottom: 0;
-  left: 0;
-  font-size: 14px;
-  background: rgba(300, 300, 300, 0.8);
-  text-decoration: none;
 }
 
 .card-img-overlay > .card-text,
@@ -173,7 +138,6 @@ footer {
 }
 
 .subNewsBtn {
-  border: none;
   font-size: 16px;
 }
 
