@@ -21,12 +21,6 @@ body {
 }
 
 .navbar {
-  background-color: red;
-
-  * {
-    color: white;
-  }
-
   img {
     width: 27%;
   }
@@ -34,7 +28,6 @@ body {
 
 .btn-warning {
   border-radius: 16px;
-  color: black;
 }
 
 footer {
@@ -55,14 +48,10 @@ footer {
 }
 
 .subscribebutton {
-  font-weight: bold;
-  color: black;
   border-radius: 20px;
 }
 
 .subscribebutton2 {
-  font-weight: bold;
-  color: black;
   border-radius: 20px;
   font-size: 10px;
 }
@@ -70,12 +59,6 @@ footer {
 .togglerbutton {
   width: 5px;
   height: auto;
-}
-
-.middleNavLinks,
-.footerNavLinks {
-  color: #000;
-  font-weight: bolder;
 }
 
 .footerNavLinks {
@@ -91,18 +74,10 @@ footer {
   color: #666;
 }
 
-#lowerLinks1 {
-  color: black;
-}
-
 .footer-links {
   a {
     width: 40%;
   }
-}
-
-i {
-  color: grey;
 }
 
 .nav-link {
@@ -126,10 +101,6 @@ i {
   color: black;
 }
 
-.red {
-  color: red;
-}
-
 .card-text-opinion {
   font-size: 12px;
 }
@@ -148,7 +119,6 @@ i {
   padding: 6px 15px 6px 15px;
   bottom: 0;
   left: 0;
-  color: red;
   font-size: 14px;
   background: rgba(300, 300, 300, 0.8);
   text-decoration: none;
@@ -160,7 +130,6 @@ i {
   padding: 6px 15px 6px 15px;
   bottom: 0;
   left: 0;
-  color: red;
   font-size: 18px;
   background: rgba(300, 300, 300, 0.8);
   text-decoration: none;
@@ -172,7 +141,6 @@ i {
   padding: 6px 15px 6px 15px;
   bottom: 0;
   left: 0;
-  color: blue;
   font-size: 14px;
   background: rgba(300, 300, 300, 0.8);
   text-decoration: none;
@@ -191,21 +159,10 @@ i {
 }
 
 .grid-text {
-  color: grey;
   font-size: 16px;
-  font-weight: bolder;
 }
 
 // Magazine
-
-.magBtn1 {
-  background: red;
-  color: white;
-}
-
-.magBtn2 {
-  color: red;
-}
 
 .magCard {
   font-size: 18px;
@@ -216,9 +173,7 @@ i {
 }
 
 .subNewsBtn {
-  background: red;
   border: none;
-  font-weight: bold;
   font-size: 16px;
 }
 
@@ -257,7 +212,5 @@ i {
   border-radius: 100%;
   width: 32px;
   height: 32px;
-  background-color: #000;
-  color: #d6d6d6;
   font: bold 14px/32px "Roboto Condensed", sans-serif;
 }
