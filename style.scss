@@ -214,3 +214,13 @@ footer {
   height: 32px;
   font: bold 14px/32px "Roboto Condensed", sans-serif;
 }
+
+.newslettertext {
+  font-size: 15px;
+}
+
+.newsletterimage {
+  background: url('./assets/starting.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
