@@ -34,7 +34,7 @@
     <nav class="d-md-none sticky-top navbar navbar-dark d-flex">
       <div class="navbar-nav mobilebar d-flex bg-danger fixed-top">
         <div class="w-100 mr-auto d-flex row bg-danger">
-          <div class="mx-auto col-6">
+          <div class="mx-auto col-6 col-sm-8">
             <a class="navbar-brand mx-auto" href="#">
               <img
                   class="img-fluid pl-2 h-auto"
@@ -44,7 +44,7 @@
                 />
             </a>
           </div>
-          <div class="navbar-collapse justify-content-end col-6">
+          <div class="navbar-collapse justify-content-end col-6 col-sm-4">
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a class="nav-link h-auto text-white" href="#" title="Title"><i class="text-secondary fas fa-user text-light" aria-hidden="true"></i></a>
@@ -2442,7 +2442,7 @@
 
       <!-- SPONSORED INSIGHT 3RD COLUMN -->
       <div
-        class="col-md-12 order-4 p-0 order-md-2 d-none d-md-block sticky-top"
+        class="col-md-12 order-4 p-0 order-md-2 d-none d-md-block"
       >
         <div class="card text-left sponsoredinsight text-danger">
           <div class="position-relative">
@@ -2480,7 +2480,7 @@
               alt="logo"/>
             <h6 class="text-black"><strong>START YOUR DAY WITH OUR TOP 5 ARTICLES</strong></h6>
           </div>
-          <form class="d-flex flex-column align-items-center">
+          <form class="d-flex flex-column align-items-center" style="margin-bottom: 40px;">
             <div class="form-group pt-3 w-75">
               <label for="email3">
                 <input type="email" id="email3" class="form-control" placeholder="Enter email">
@@ -3994,7 +3994,30 @@
       <div class="row">
 
         <!-- Subscribe -->
-        <div class="col-12 col-md-12 col-lg-8 p-1">
+        <div class="d-none d-md-block col-12 col-md-12 col-lg-8">
+          <h4 class="font-weight-bold w-75 text-danger">Subscribe</h4>
+          <div class="jumbotron text-left row" style="height:320px; max-height: 320px;">
+            <div class="col-12 col-md-4">
+              <span class="img-fluid"><img src="./assets/trump-redalert.jpg" height="200" width="150" alt="trump"></span>
+              <span class="subNewsImg mr-3 img-fluid position-absolute"><img src="./assets/cover-january.webp" height="200" width="150" alt="trump"></span>
+            </div>
+            <div class="col-12 col-md-8 pt-3 pt-md-0 ml-3 ml-md-0">
+              <div class="row">
+                <h3 class="font-weight-bold w-75">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                <hr class="my-4">
+                <p class="lead font-weight-lighter">All Access + Weekly Delivery.<br>
+                  Choose A Membership That's Perfect for You!</p>
+                  <div class="row">
+                    <div class="col-12 col-sm-1 ml-3">
+                      <a class="btn btn-primary btn-lg border-0 bg-danger font-weight-bold" style="margin-top: -10px;" href="#" role="button">SUBSCRIBE></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-md-none col-md-12 col-lg-8">
           <h4 class="font-weight-bold w-75 text-danger">Subscribe</h4>
           <div class="jumbotron text-left row">
             <div class="col-12 col-md-4">
@@ -4009,7 +4032,7 @@
                   Choose A Membership That's Perfect for You!</p>
                   <div class="row">
                     <div class="col-12 col-sm-1 ml-3">
-                      <a class="btn btn-primary btn-lg border-0 bg-danger font-weight-bold" href="#" role="button">SUBSCRIBE></a>
+                      <a class="btn btn-primary btn-lg border-0 bg-danger font-weight-bold" style="margin-top: -10px;" href="#" role="button">SUBSCRIBE></a>
                     </div>
                   </div>
               </div>
@@ -4018,14 +4041,14 @@
         </div>
 
         <!-- Newsletter -->
-        <div class="col-12 col-md-12 mb-5 col-lg-3 offset-0 container-fluid h-100">
+        <div class="col-12 col-md-12 mb-5 col-lg-3 offset-0 container-fluid" style="max-height: 350px;">
           <h4 class="font-weight-bold text-danger ml-0">Newsletter</h4>
           <div class="text-left ml-0 row">
-            <div class="col-12 col-md-6 newsletterimage">
+            <div class="col-12 col-md-6 newsletterimage" style="max-height: 350px;">
             </div>
-            <div class="col-12 col-md-6 mb-5 mb-md-0">
+            <div class="col-12 col-md-6 mb-5 mb-md-0" style="max-height: 350px;">
               <div class="d-block d-md-none newsletterimage h-75"></div>
-              <h4 class=" font-weight-bold">The Starting 5
+              <h4 class="font-weight-bold">The Starting 5
               </h4>
               <p class="lead font-weight-lighter newslettertext">See why nearly a quarter of a million subscribers begin their day with the Starting 5.
                 </p>
@@ -4041,7 +4064,7 @@
       </div>
       </div>
       <!-- Footer -->
-      <footer class="container p-3 d-none d-sm-block">
+      <footer class="container p-3 d-none d-sm-block" style="margin-top: 50px">
         <div class="upper-footer justify-content-between d-flex">
           <div class="footer-links d-flex justify-content-start">
             <a href="#" title="Title"
